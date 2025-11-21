@@ -294,6 +294,8 @@ class _CNIconState extends State<CNIcon> {
     if (widget.imageAsset != null) {
       // Resolve asset path based on device pixel ratio
       final resolvedAssetPath = await resolveAssetPathForPixelRatio(widget.imageAsset!.assetPath);
+      if (!mounted) return;
+
       name = resolvedAssetPath;
       size = widget.size ?? widget.imageAsset!.size;
       color = resolveColorToArgb(

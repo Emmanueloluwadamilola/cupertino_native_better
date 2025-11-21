@@ -272,12 +272,6 @@ class _CNTabBarState extends State<CNTabBar> {
     final symbols = widget.items.map((e) => e.icon?.name ?? '').toList();
     final activeSymbols = widget.items.map((e) => e.activeIcon?.name ?? e.icon?.name ?? '').toList();
     final badges = widget.items.map((e) => e.badge ?? '').toList();
-    final sizes = widget.items
-        .map((e) => (widget.iconSize ?? e.icon?.size ?? e.imageAsset?.size))
-        .toList();
-    final colors = widget.items
-        .map((e) => resolveColorToArgb(e.icon?.color ?? e.imageAsset?.color, context))
-        .toList();
     
     // Extract imageAsset data and resolve asset paths based on device pixel ratio
     final imageAssetPaths = await Future.wait(
@@ -294,6 +288,16 @@ class _CNTabBarState extends State<CNTabBar> {
           : ''
       )
     );
+
+    if (!mounted) return const SizedBox();
+
+    final sizes = widget.items
+        .map((e) => (widget.iconSize ?? e.icon?.size ?? e.imageAsset?.size))
+        .toList();
+    final colors = widget.items
+        .map((e) => resolveColorToArgb(e.icon?.color ?? e.imageAsset?.color, context))
+        .toList();
+
     final imageAssetData = widget.items.map((e) => e.imageAsset?.imageData).toList();
     final activeImageAssetData = widget.items.map((e) => e.activeImageAsset?.imageData).toList();
     // Auto-detect format if not provided (use resolved paths)
@@ -315,6 +319,8 @@ class _CNTabBarState extends State<CNTabBar> {
             detectImageFormat(resolvedPath, e.activeImageAsset!.imageData) ?? '';
       })
     );
+
+    if (!mounted) return const SizedBox();
 
     final creationParams = <String, dynamic>{
       'labels': labels,

@@ -69,7 +69,7 @@ class CNPopupGesture extends StatelessWidget {
       context: context,
       barrierDismissible: true,
       barrierLabel: MaterialLocalizations.of(context).modalBarrierDismissLabel,
-      barrierColor: overlayColor ?? Colors.black.withOpacity(0.3),
+      barrierColor: overlayColor ?? Colors.black.withValues(alpha: 0.3),
       transitionDuration: const Duration(milliseconds: 200),
       pageBuilder: (context, animation, secondaryAnimation) {
         return _CNPopupMenuOverlay(
@@ -145,7 +145,7 @@ class _CNPopupMenuOverlay extends StatelessWidget {
             ),
             child: Container(
               decoration: BoxDecoration(
-                color: CupertinoColors.systemGrey.withOpacity(0.2),
+                color: CupertinoColors.systemGrey.withValues(alpha: 0.2),
                 borderRadius: BorderRadius.circular(8),
               ),
             ),
@@ -169,11 +169,11 @@ class _CNPopupMenuOverlay extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: CupertinoTheme.of(context)
                         .scaffoldBackgroundColor
-                        .withOpacity(0.95),
+                        .withValues(alpha: 0.95),
                     borderRadius: BorderRadius.circular(12),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.2),
+                        color: Colors.black.withValues(alpha: 0.2),
                         blurRadius: 12,
                         offset: const Offset(0, 4),
                       ),
@@ -265,7 +265,7 @@ class _CNPopupMenuOverlay extends StatelessWidget {
             Divider(
               height: 1,
               thickness: 0.5,
-              color: CupertinoColors.separator.withOpacity(0.5),
+              color: CupertinoColors.separator.withValues(alpha: 0.5),
             ),
           );
         }

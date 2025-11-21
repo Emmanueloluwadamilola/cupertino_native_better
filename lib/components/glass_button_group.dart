@@ -459,15 +459,15 @@ class _ButtonSnapshot {
       label: button.label,
       iconName: button.icon?.name,
       iconSize: button.icon?.size,
-      iconColor: button.icon?.color?.value,
+      iconColor: button.icon?.color?.toARGB32(),
       imageAssetPath: button.imageAsset?.assetPath,
       imageAssetDataLength: button.imageAsset?.imageData?.length,
       imageAssetSize: button.imageAsset?.size,
-      imageAssetColor: button.imageAsset?.color?.value,
+      imageAssetColor: button.imageAsset?.color?.toARGB32(),
       customIconHash: button.customIcon?.hashCode,
       style: button.config.style.name,
       enabled: button.enabled,
-      tint: button.tint?.value,
+      tint: button.tint?.toARGB32(),
     );
   }
 

@@ -74,6 +74,7 @@ class CNButtonConfig {
   /// When limited, text will be truncated with ellipsis if too long.
   final int? maxLines;
 
+  /// Creates a configuration for [CNButton].
   const CNButtonConfig({
     this.padding,
     this.borderRadius,
@@ -657,13 +658,15 @@ class _CNButtonState extends State<CNButton> {
           (hadImageAsset != hasImageAsset) || (hadCustomIcon != hasCustomIcon);
 
       // Handle imageAsset (takes precedence over SF Symbol)
-      if (widget.imageAsset != null) {
+          if (widget.imageAsset != null) {
         // Update if path/data changed OR if we switched from another icon type
         if (imageAssetPathChanged || imageAssetDataChanged || iconTypeChanged) {
           // Resolve asset path based on device pixel ratio
           final resolvedAssetPath = await resolveAssetPathForPixelRatio(
             widget.imageAsset!.assetPath,
           );
+          if (!mounted) return;
+
           updates['buttonAssetPath'] = resolvedAssetPath;
           updates['buttonImageData'] = widget.imageAsset!.imageData;
           // Auto-detect format if not provided (use resolved path)
@@ -721,6 +724,8 @@ class _CNButtonState extends State<CNButton> {
             final resolvedAssetPath = await resolveAssetPathForPixelRatio(
               widget.imageAsset!.assetPath,
             );
+            if (!mounted) return;
+
             updates['buttonAssetPath'] = resolvedAssetPath;
             updates['buttonImageData'] = widget.imageAsset!.imageData;
             updates['buttonImageFormat'] =

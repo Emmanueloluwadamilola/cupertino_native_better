@@ -314,6 +314,18 @@ class _CNPopupMenuButtonState extends State<CNPopupMenuButton> {
         widget.buttonImageAsset!.assetPath,
       );
     }
+    if (!mounted) return const SizedBox();
+
+    // Resolve menu item image assets concurrently
+    final resolvedMenuPaths = await Future.wait(
+      widget.items.map((e) async {
+        if (e is CNPopupMenuItem && e.imageAsset != null) {
+          return await resolveAssetPathForPixelRatio(e.imageAsset!.assetPath);
+        }
+        return null;
+      }),
+    );
+    if (!mounted) return const SizedBox();
 
     final buttonIconBytes = customIconData?['buttonIconBytes'] as Uint8List?;
     final menuIconBytes =
@@ -336,7 +348,8 @@ class _CNPopupMenuButtonState extends State<CNPopupMenuButton> {
     final gradients = <bool?>[];
 
     var menuIconIndex = 0;
-    for (final e in widget.items) {
+    for (var i = 0; i < widget.items.length; i++) {
+      final e = widget.items[i];
       if (e is CNPopupMenuDivider) {
         labels.add('');
         symbols.add('');
@@ -352,7 +365,6 @@ class _CNPopupMenuButtonState extends State<CNPopupMenuButton> {
         modes.add(null);
         palettes.add(null);
         gradients.add(null);
-        menuIconIndex++;
       } else if (e is CNPopupMenuItem) {
         labels.add(e.label);
         symbols.add(e.icon?.name ?? '');
@@ -365,10 +377,8 @@ class _CNPopupMenuButtonState extends State<CNPopupMenuButton> {
 
         // Handle imageAsset for menu items
         if (e.imageAsset != null) {
-          // Resolve asset path based on device pixel ratio
-          final resolvedPath = await resolveAssetPathForPixelRatio(
-            e.imageAsset!.assetPath,
-          );
+          // Use pre-resolved path
+          final resolvedPath = resolvedMenuPaths[i]!;
           imageAssetPaths.add(resolvedPath);
           imageAssetData.add(e.imageAsset!.imageData);
           // Auto-detect format if not provided (use resolved path)
@@ -472,7 +482,7 @@ class _CNPopupMenuButtonState extends State<CNPopupMenuButton> {
       '${widget.buttonStyle.name}_'
       '${widget.height}_'
       '${widget.width}_'
-      '${widget.tint?.value}_'
+      '${widget.tint?.toARGB32()}_'
       '$_isDark',
     );
 
