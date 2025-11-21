@@ -1,3 +1,10 @@
+## 1.0.1
+
+* **Pub Points Improvement**: Addressed static analysis issues to improve package score.
+* **Fix**: Resolved `use_build_context_synchronously` warnings across multiple components.
+* **Fix**: Replaced deprecated `Color.value` and `withOpacity` usages with modern alternatives.
+* **Documentation**: Added missing documentation for public members.
+
 ## 1.0.0
 
 **Major Release - Complete iOS Fallback Fixes**
