@@ -1,3 +1,11 @@
+## 1.1.1
+
+### Fixes
+
+- **Fixed**: Resolved `use_build_context_synchronously` lint warnings for full pub.dev analysis score
+
+---
+
 ## 1.1.0
 
 ### Documentation Overhaul

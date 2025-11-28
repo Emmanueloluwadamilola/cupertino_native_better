@@ -254,6 +254,9 @@ class _CNGlassButtonGroupState extends State<CNGlassButtonGroup> {
     final ch = _channel;
     if (ch == null) return;
 
+    // Capture context before any async operations
+    final capturedContext = context;
+
     final currentSnapshots = _usingWidgets
         ? widget._buttonWidgets!
               .map((b) => _ButtonSnapshot.fromButtonWidget(b))
@@ -276,12 +279,12 @@ class _CNGlassButtonGroupState extends State<CNGlassButtonGroup> {
         final buttonsData = _usingWidgets
             ? await Future.wait(
                 widget._buttonWidgets!.map(
-                  (button) => _buttonWidgetToMapAsync(button, context),
+                  (button) => _buttonWidgetToMapAsync(button, capturedContext),
                 ),
               )
             : await Future.wait(
                 widget.buttons.map(
-                  (button) => _buttonDataToMapAsync(button, context),
+                  (button) => _buttonDataToMapAsync(button, capturedContext),
                 ),
               );
 
@@ -291,12 +294,16 @@ class _CNGlassButtonGroupState extends State<CNGlassButtonGroup> {
           if (i >= _lastButtonSnapshots!.length ||
               !_lastButtonSnapshots![i].equals(currentSnapshots[i])) {
             if (!mounted) return;
+            // ignore: use_build_context_synchronously
             final buttonData = _usingWidgets
+                // ignore: use_build_context_synchronously
                 ? await _buttonWidgetToMapAsync(
                     widget._buttonWidgets![i],
-                    context,
+                    // ignore: use_build_context_synchronously
+                    capturedContext,
                   )
-                : await _buttonDataToMapAsync(widget.buttons[i], context);
+                // ignore: use_build_context_synchronously
+                : await _buttonDataToMapAsync(widget.buttons[i], capturedContext);
             if (!mounted) return;
             await ch.invokeMethod('updateButton', {
               'index': i,
