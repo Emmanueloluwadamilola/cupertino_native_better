@@ -338,7 +338,8 @@ class _CNSearchBarState extends State<CNSearchBar>
 
   @override
   Widget build(BuildContext context) {
-    final isIOSOrMacOS = defaultTargetPlatform == TargetPlatform.iOS ||
+    final isIOSOrMacOS =
+        defaultTargetPlatform == TargetPlatform.iOS ||
         defaultTargetPlatform == TargetPlatform.macOS;
     final shouldUseNative =
         isIOSOrMacOS && PlatformVersion.shouldUseNativeGlass;
@@ -390,7 +391,8 @@ class _CNSearchBarState extends State<CNSearchBar>
         final expandedWidth = MediaQuery.of(context).size.width;
         final width = widget.expandable
             ? widget.collapsedWidth +
-                (expandedWidth - widget.collapsedWidth) * _expandAnimation.value
+                  (expandedWidth - widget.collapsedWidth) *
+                      _expandAnimation.value
             : expandedWidth;
 
         return SizedBox(
@@ -408,11 +410,13 @@ class _CNSearchBarState extends State<CNSearchBar>
 
   Widget _buildFlutterSearchBar(BuildContext context) {
     final effectiveTint = widget.tint ?? CupertinoColors.systemBlue;
-    final effectiveBackgroundColor = widget.backgroundColor ??
+    final effectiveBackgroundColor =
+        widget.backgroundColor ??
         CupertinoColors.systemGrey6.resolveFrom(context);
     final effectiveTextColor =
         widget.textColor ?? CupertinoColors.label.resolveFrom(context);
-    final effectivePlaceholderColor = widget.placeholderColor ??
+    final effectivePlaceholderColor =
+        widget.placeholderColor ??
         CupertinoColors.placeholderText.resolveFrom(context);
 
     return AnimatedBuilder(
@@ -421,7 +425,8 @@ class _CNSearchBarState extends State<CNSearchBar>
         final expandedWidth = MediaQuery.of(context).size.width;
         final currentWidth = widget.expandable
             ? widget.collapsedWidth +
-                (expandedWidth - widget.collapsedWidth) * _expandAnimation.value
+                  (expandedWidth - widget.collapsedWidth) *
+                      _expandAnimation.value
             : expandedWidth;
 
         return Row(

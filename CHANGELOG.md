@@ -1,8 +1,17 @@
+## 1.1.3
+
+### Fixes
+
+- **Fixed**: Full 50/50 pub.dev static analysis score (160/160 pana points)
+- **Fixed**: All remaining lint and formatting issues
+
+---
+
 ## 1.1.2
 
 ### Fixes
 
-- **Fixed**: Dart formatter compliance for full 50/50 pub.dev analysis score
+- **Fixed**: Dart formatter compliance
 
 ---
 

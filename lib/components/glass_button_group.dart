@@ -305,6 +305,7 @@ class _CNGlassButtonGroupState extends State<CNGlassButtonGroup> {
                 // ignore: use_build_context_synchronously
                 : await _buttonDataToMapAsync(
                     widget.buttons[i],
+                    // ignore: use_build_context_synchronously
                     capturedContext,
                   );
             if (!mounted) return;
