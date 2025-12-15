@@ -16,12 +16,7 @@ class CupertinoTabBarNSView: NSView {
 
   init(viewId: Int64, args: Any?, messenger: FlutterBinaryMessenger) {
     self.channel = FlutterMethodChannel(name: "CupertinoNativeTabBar_\(viewId)", binaryMessenger: messenger)
-    // 'selectOne' tracking mode handles both tap and drag interactions natively.
-    // The "liquid glass" animation logic is internal to this control style.
     self.control = NSSegmentedControl(labels: [], trackingMode: .selectOne, target: nil, action: nil)
-    if #available(macOS 11.0, *) {
-      self.control.segmentStyle = .rounded
-    }
 
     var labels: [String] = []
     var symbols: [String] = []
