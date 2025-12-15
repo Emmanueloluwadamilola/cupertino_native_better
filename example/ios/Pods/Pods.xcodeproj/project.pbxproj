@@ -20,6 +20,7 @@
 
 /* Begin PBXBuildFile section */
 		00CF21C4C9A272F2C08A321854A26B9B /* CALayerWithClipRender.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A68370798BE39E63A7327642F6686F /* CALayerWithClipRender.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		00DBB1ED94A9010D50C6B2A1AD554882 /* FLTIntegrationTestRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CD497D901F169CAF6402C1584A2DD9 /* FLTIntegrationTestRunner.m */; };
 		00F2D18078FB7900E32D87C5F130F794 /* SVGKParseResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 73F060DE80F9F1F921502DC3D77D5A04 /* SVGKParseResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		01B4AFF9FB5EBDBD057F5573412FE9D0 /* SVGLinearGradientElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 86EFE95E174BDB2F759B7D09A249FD64 /* SVGLinearGradientElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		01E2AE54B3D09A584570BBAA0701B1C3 /* CupertinoIconFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11BB0A80D2F59E153E74119E558B5CE /* CupertinoIconFactory.swift */; };
@@ -55,7 +56,6 @@
 		116C2482F79AF5DC1EB6945B79A57DA2 /* SVGDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D4E3B8E76A60C438E28F2740D817F /* SVGDocument.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		11AA879620FC13D7026A28B6BFD92E6D /* CAShapeLayerWithClipRender.h in Headers */ = {isa = PBXBuildFile; fileRef = 6441BBB07F65B6E2B0891C9BC08D5302 /* CAShapeLayerWithClipRender.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11ABAA838C48AF2E571739A401FBF880 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9BF5A1995A3EF62BB3E4BF8D7588E81 /* Foundation.framework */; };
-		1537324C41E5AD6ADAF0FEBEFAEF18AD /* IntegrationTestIosTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 574D7766A16C34E39BE58F32FA9A6836 /* IntegrationTestIosTest.m */; };
 		15822FED48A1BC036DD05AE8D8E06B3A /* SVGKInlineResource.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C8004A8195ECA72BCD4F3F4D6E8C5D1 /* SVGKInlineResource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		180C9ECBD0300370362F6B0043E5CAA9 /* SVGTextContentElement.h in Headers */ = {isa = PBXBuildFile; fileRef = DC1C1E86CF930B7015642FAB2C97CC92 /* SVGTextContentElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A43127535275A603751EBE9C22EFB76 /* SVGRadialGradientElement.h in Headers */ = {isa = PBXBuildFile; fileRef = A629FFA4F5572A8790FDD4551AB5BA8A /* SVGRadialGradientElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -76,11 +76,11 @@
 		25EB7BA8C6B04A78B4EC84EE7BBE8EC6 /* SVGKPointsAndPathsParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 88424D9223599203E26593743F018E9B /* SVGKPointsAndPathsParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		29389697A7101A2A34EAB05FAFFEBA86 /* SVGMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E921903354DB6918BBE69F34A30BB84 /* SVGMatrix.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		2A2EC14BED2318BD75BD129F3873DD31 /* Comment.h in Headers */ = {isa = PBXBuildFile; fileRef = 574B95708AAE83B2B373ED2D04C8121C /* Comment.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2A9967C72CCDF80FAB9021317A401AA7 /* IntegrationTestPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = B33D782B73AA9D90F1D39CC5A43B9953 /* IntegrationTestPlugin.m */; };
 		2AA67FD6F2DB55A0A4A3DD7A1C92756D /* SVGLength.h in Headers */ = {isa = PBXBuildFile; fileRef = A55AB2C8288FB9EC5F8F22D0008D45F2 /* SVGLength.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2ABF65C61917A66FC73E28E2B8E35DA5 /* CupertinoIconPlatformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C1269BB0FEA6198F45306A023621E /* CupertinoIconPlatformView.swift */; };
 		2AE40FF0D78B59A762896E5B8CF36132 /* SVGPolylineElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7B8A7A452AABC13DA9AEE2D44E2F3 /* SVGPolylineElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		2AE9F9283DC28FE70DA5D7EA54DC6CA5 /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = C82596AF23A62025C5A4BED8440683B7 /* DDASLLogCapture.m */; };
+		2B366C50BD9AD3A8DDA32BAB4F8F3D1A /* IntegrationTestIosTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AC15088C3829E80851698F13B07FF5 /* IntegrationTestIosTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C450F6072322388ABF1059A65F3C21C /* SVGKPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 403D14B7AEEEE65B9CDEE36D5AF282D8 /* SVGKPattern.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		2C8902027F07FA48E9DCA71173815398 /* SVGRect.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F1FC48CBEB4E25241BE98C93803EB58 /* SVGRect.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E1D7B1770D59F0DD517268DB9522941 /* SVGKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D99DE292B2B759AF01B502825D7849CC /* SVGKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -115,12 +115,12 @@
 		410AD4D03B0703448C6FF5C15232C04F /* ProcessingInstruction.h in Headers */ = {isa = PBXBuildFile; fileRef = 01AA0E73224DCBC7A86C67B4FBE3F010 /* ProcessingInstruction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		416BF04E773E08277C8F19FDECE708A8 /* CALayer+RecursiveClone.h in Headers */ = {isa = PBXBuildFile; fileRef = FB306DFDD818DDA9823D311B55AA7516 /* CALayer+RecursiveClone.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41C3967ED3D676BD9CDC9C0C3A273251 /* SVGKExporterNSData.h in Headers */ = {isa = PBXBuildFile; fileRef = F42AE7F73024A984569185C969C70CC4 /* SVGKExporterNSData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		424A3856870B75AF4575AE0D86F98A4D /* IntegrationTestIosTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E72906B489A1C22E8D3E05CBB756C8F /* IntegrationTestIosTest.m */; };
 		43DA0DEFFC74FE1A4AD98C434349D378 /* SVGMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A562CB23B43D9023EFCED168D02109D /* SVGMatrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		44699FD1E6B3517989E9C9489994D6EA /* SVGStylable.h in Headers */ = {isa = PBXBuildFile; fileRef = 5057DB17B24E21E4D37179FF9E1DEC86 /* SVGStylable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		450F54769093C9A16531CD2267106B69 /* CSSPrimitiveValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 895826CCC7A2CA6D309423D9F2730852 /* CSSPrimitiveValue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		4548923127E32188036006042149C0DA /* SVGTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = 90E2675A83EB3BA77CC5274BE5800120 /* SVGTransform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46248B46BC21C60A8C0558802B6DDD3E /* CSSRuleList.h in Headers */ = {isa = PBXBuildFile; fileRef = 46DC7CD8C9C5A9B6C63CC6496031A8B2 /* CSSRuleList.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46DAB54CAD35FE69BB7F4A9C45A61AF4 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 501BF2A971C94512EA8D6BAE712ACC40 /* PrivacyInfo.xcprivacy */; };
 		4764B7ED0F55E1EB9722FE8C0A359D00 /* DocumentStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 96D80A8591D50925CFF615B2B0243242 /* DocumentStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B1AA3C9E83624CA78B29477CB9B98D8 /* SVGKParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DBFD31F923FB495229DAD5A01EFFFB /* SVGKParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		4C17F1E203BCA0BD2920594005D607CF /* SVGClipPathElement.m in Sources */ = {isa = PBXBuildFile; fileRef = B99A5BD3BEB73453EF12F0A0E039D65C /* SVGClipPathElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -155,7 +155,6 @@
 		5F89E961FD7AB7CE4BF0929D6111F8E0 /* StyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DCCD98ED17553C9370A02FF69E6FA3 /* StyleSheet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		6116D27BE3440A3BB1D87B568B528DE7 /* CDATASection.h in Headers */ = {isa = PBXBuildFile; fileRef = E17D928D200D60F8C9B4156865F0A976 /* CDATASection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6121163D95BA810328089CA0C22494B9 /* SVGElement_ForParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A51A93223A498258960F62F2B7B9BE7 /* SVGElement_ForParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		627F5CEB55796E876CA64A9FD1856124 /* FLTIntegrationTestRunner.h in Headers */ = {isa = PBXBuildFile; fileRef = AE46DE9FF88782A3666FE5A7E109D98B /* FLTIntegrationTestRunner.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64338958282CC7AE1B333F40330DC74F /* SVGPreserveAspectRatio.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FED2D3E867FCC4DBA23D0C2E4B2632 /* SVGPreserveAspectRatio.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		6475C0A6A75258E0E5E209629DDA20D7 /* DDMultiFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D687449EAABC4F7F10EEA68A63DDF6A /* DDMultiFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		653DAE1ECEC9F38670AF4EF2F4960D76 /* DocumentFragment.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9FE52739909A7636AED0E7C822709F /* DocumentFragment.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -166,6 +165,7 @@
 		682299FBC7F403BC92D3F4EBAC246959 /* SVGKImageRep.m in Sources */ = {isa = PBXBuildFile; fileRef = 43733EA5887A8C35A6D356FC5BE3294A /* SVGKImageRep.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		68FB337EA13AC152EDA4204DD974504E /* SVGClipPathElement.h in Headers */ = {isa = PBXBuildFile; fileRef = A7C5C0416462266618D3A7E791E49829 /* SVGClipPathElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		697D4809E9FA0F44948CAC570D96853D /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BAD826A0F069B9B2828277D54C1C66 /* DDFileLogger.m */; };
+		6A75C5318FFD11A65720BAC4EF47F3DF /* IntegrationTestPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = B243559166003CECB0F6FC3716621A90 /* IntegrationTestPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A797A92D46C281FF1DF5CC4E8E58B95 /* Element.m in Sources */ = {isa = PBXBuildFile; fileRef = D25DB86F4D5F14D10CFA143359058D70 /* Element.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		6AA94DA803E35F9B29388AF5310F463F /* SVGElementInstance_Mutable.h in Headers */ = {isa = PBXBuildFile; fileRef = AC69976DD3AA86755CB73B1968208A2E /* SVGElementInstance_Mutable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6AE5BC59A79EF2FFF8106AA9712E5180 /* CSSStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5413137C558B6D45CD01F0A6ECFB9C /* CSSStyleSheet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -185,7 +185,6 @@
 		7587D1E408BD96E6BCDD9993FC565ED0 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 661ABB3A81284B307FAEF2FB985B3C36 /* DDASLLogger.m */; };
 		76C0FAC1BC893AB7271AD8943139B60E /* SVGKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35AC26EB5664D1F4F18A9B29D38A459F /* SVGKit-dummy.m */; };
 		76FB21CA95F7E1756891DDA59797A9E6 /* SVGLineElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C63D829AC7C43A3A30ED0C28062DFB /* SVGLineElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		77BE2DA86DF37BD6A8633BEBEE7898A1 /* FLTIntegrationTestRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5012E516323FBF9DE011FA6A1690E5 /* FLTIntegrationTestRunner.m */; };
 		797FC4D0702FF66F1CBAA9706AD8BDDB /* SVGUseElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E3129F41689DD60333B4129F3290A31 /* SVGUseElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79BF726898261DDE811B01EE24BC2156 /* SVGSVGElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 311668D3716F46A513FEF6B71EAF13E3 /* SVGSVGElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7A03961BDC12340C3DEDED34D555BF9A /* NSCharacterSet+SVGKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 12995437FC455CA218193B8A8D88B11A /* NSCharacterSet+SVGKExtensions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -203,11 +202,10 @@
 		863F6E82ACC1ABB13B52C019CBA05974 /* SVGGroupElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D2F620370EC6E3F12849D896B9352D /* SVGGroupElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		86C6C74B338E1D1A29DAA62FE4742706 /* SVGKParserDefsAndUse.m in Sources */ = {isa = PBXBuildFile; fileRef = 80619AD41ABFC52178026013A1B1714C /* SVGKParserDefsAndUse.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		874C7CF9451247EC914833B32E8F87B7 /* SVGKSourceURL.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3DDFB9E4674FEF8EED4FD2E5217AD5 /* SVGKSourceURL.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		88AB600DB79A927B6B30CEB52E19A18D /* IntegrationTestIosTest.h in Headers */ = {isa = PBXBuildFile; fileRef = F98B8FEF7B1DB8C5CC2EA7104D381B7D /* IntegrationTestIosTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89787991E8FDC81334252949CA012DF6 /* SVGKExporterNSImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E9415B2CCFE59DC6274B01F76244204 /* SVGKExporterNSImage.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		89863C7C962F380B494F41BD947C2291 /* GlassButtonGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2147DF25BDB3945FA1C04A4A61617C1F /* GlassButtonGroupView.swift */; };
 		898F57570FA3E297EA6915712A16B230 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9BF5A1995A3EF62BB3E4BF8D7588E81 /* Foundation.framework */; };
-		8A655B581F2FFA1A700C0AA32E29941E /* integration_test-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C61F4F072FB5B0D52994322CD9A69330 /* integration_test-dummy.m */; };
+		8A655B581F2FFA1A700C0AA32E29941E /* integration_test-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C653B6D84A09AAE389E3D85F9BB10E /* integration_test-dummy.m */; };
 		8ABCA6251B2A8CFF633DABC90D97529E /* SVGRectElement.h in Headers */ = {isa = PBXBuildFile; fileRef = F37829202DE05FE489B94986E51F612A /* SVGRectElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D16D562FB48434BB3B024A612E8C990 /* DDContextFilterLogFormatter+Deprecated.h in Headers */ = {isa = PBXBuildFile; fileRef = 932B339FE79CA42D8BC7DCE1246B2291 /* DDContextFilterLogFormatter+Deprecated.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F9109179CA1097CC3764E4D9B1E2E85 /* SVGDescriptionElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E320E58F9E9078D8397616FAFD6C80D /* SVGDescriptionElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -215,6 +213,7 @@
 		91755B3F0D32D1A27705DA818EAABA5E /* CupertinoSegmentedControlPlatformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB26224E48D9CF9B3EF76F5857A5FDD /* CupertinoSegmentedControlPlatformView.swift */; };
 		92D1FBC12BD330C8E2810B9CC9E9C060 /* SVGUseElement_Mutable.h in Headers */ = {isa = PBXBuildFile; fileRef = ECD1E1366E738DC7404BB43BA3824BC8 /* SVGUseElement_Mutable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		953834380497DD4C8E47CC61B02F7004 /* SVGPreserveAspectRatio.h in Headers */ = {isa = PBXBuildFile; fileRef = F16FC83DE2901F789D5B3F7DC12B7FCC /* SVGPreserveAspectRatio.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9572D5F85F03BD01E8D2140E3D039C31 /* FLTIntegrationTestRunner.h in Headers */ = {isa = PBXBuildFile; fileRef = 426436CA9576AEA83010DA065EF9E728 /* FLTIntegrationTestRunner.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		962DA0A695A038D4513E82F9CAFFC1E2 /* NSData+NSInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A09AB0E5411D505826CBB4B31A01A7C /* NSData+NSInputStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		965949C27B4053F316FAF39D31E68DDE /* SVGTextPositioningElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DC3A1AD91BC4CA4351F7770D4C43566 /* SVGTextPositioningElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		966F006881A9D79B106A1CE9D5401C9C /* CALayerWithClipRender.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D52DCB354075DFF1F1B7E966F4BA12F /* CALayerWithClipRender.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -233,6 +232,7 @@
 		A04F35EF9621001E257BB4FA0AA04464 /* CupertinoPopupMenuButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2784409DCA6D7E0DE1A7E9CF2BA80D85 /* CupertinoPopupMenuButtonFactory.swift */; };
 		A0CC088C61DC97E08F38C9C5C0349F23 /* SVGKImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CC07909AFB2FFD527AB9AA6F26ABBA4 /* SVGKImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1FAC3027829C029CA68C4A208631F6E /* Document+Mutable.h in Headers */ = {isa = PBXBuildFile; fileRef = DCBCF5B45A8296124EE4B903280AC320 /* Document+Mutable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A29890D9FBB929DC034C2003F46819E5 /* IntegrationTestPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1331D07F6C29B00F5E6F2ADACF6A92 /* IntegrationTestPlugin.m */; };
 		A38B19EC4DB8A089D20DF7603BB76401 /* SVGKParserPatternsAndGradients.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDB7DAAE2EABB12BAADFB1E32F4CF64 /* SVGKParserPatternsAndGradients.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		A4DC4A56A9BF1F595C7CE81CCF765EE6 /* FloatingIslandFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE79898DD872459F6818081EFCA2A035 /* FloatingIslandFactory.swift */; };
 		A4EF985D2FAA4ACDC11756B602CCCA4B /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F6AD801BC473A5F5E4F67C68FE3738A /* DDFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -294,7 +294,7 @@
 		D1BDD4486D3E1309B04D151C39F233AC /* SVGKImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 582604B43C38A1187218048E99684FA6 /* SVGKImage.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		D1E2FE847BC704B6CCDCA621961DCEA9 /* DocumentFragment.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B02C0DF053589EE0F442CCB3569CB60 /* DocumentFragment.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2840D5E57A0E556CBCF0D159D5A08F7 /* SVGLength.m in Sources */ = {isa = PBXBuildFile; fileRef = E97ECFC49446B4A8FE50FE3A0C2A3CB8 /* SVGLength.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		D3161FF34F8E2B45AD80A7B9450BE18B /* integration_test-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4444D801B4CECE97DABCE8C7EAA6EDDD /* integration_test-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3161FF34F8E2B45AD80A7B9450BE18B /* integration_test-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D57EBBBC09A7503AAF9906A1FB3D4257 /* integration_test-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D41E6EF9A3E783FE040A079D0FD6E1CE /* SVGTextLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2119C239DF04A71195BF79EA644D72 /* SVGTextLayer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		D448EAF06EA3A714E6429BCDB2E4C782 /* SVGKImageRep.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E43F2FA54605F8695F3339146E22E8C /* SVGKImageRep.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4808C7E8A403FE9FF271ACCAD8F14A8 /* SVGKLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DC73CD58A343D7AA46E40E7293FD343 /* SVGKLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -319,6 +319,7 @@
 		E54F6E6A367566A29221DA5210464F94 /* CupertinoGlassButtonGroupFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C9CA506EB4702FD82AE2E1F59773BD /* CupertinoGlassButtonGroupFactory.swift */; };
 		E602819B253796FCE225DB77C1D3CA3A /* SVGKParserDOM.m in Sources */ = {isa = PBXBuildFile; fileRef = 297B777FCD501B48AAC3AC444C4BDC22 /* SVGKParserDOM.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		E6A310F02A2C8A6C3EA5F26FC648849D /* CSSValue_ForSubclasses.h in Headers */ = {isa = PBXBuildFile; fileRef = 494B4FC6AC1B2C503F0FE8A40FFCB482 /* CSSValue_ForSubclasses.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E75C2B3914EF9EF16E865B5CB25ABCEA /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 501BF2A971C94512EA8D6BAE712ACC40 /* PrivacyInfo.xcprivacy */; };
 		E895254EBD718C5992A3FE2420695EB3 /* SVGElementInstance.h in Headers */ = {isa = PBXBuildFile; fileRef = C2B681A75EC168E8AC3E01DD5BFC7C60 /* SVGElementInstance.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8B780DD379B3EA4BACF6789B769FEED /* CSSValueList.m in Sources */ = {isa = PBXBuildFile; fileRef = EA04A177FD389F73C7075ACB88263AA1 /* CSSValueList.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		E908C964E976B5130969710C37E9F6F8 /* StyleSheetList.m in Sources */ = {isa = PBXBuildFile; fileRef = 218718D2867A282330AEEE7F501833FD /* StyleSheetList.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -333,7 +334,6 @@
 		EE7C0B9FBE1BF7122D844E5FD79ADF4C /* SVGElementInstanceList.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E41C725ACFD617D619B4B8BCD3B53F /* SVGElementInstanceList.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		F0294C8C5C87913E8BD5B9277E205FCA /* SVGKDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D4C8122A9A7110901703DA914F9206B /* SVGKDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0B5F09A184374E75F6B3C417B3F27C4 /* CupertinoSliderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF850A2D985A082C6E4FEAACE4368766 /* CupertinoSliderFactory.swift */; };
-		F14AD9787FB9195463515332D9C471C9 /* IntegrationTestPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = DCCD578B251DD2035CF0C05782A9C104 /* IntegrationTestPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1DCCFE199A2F50755305775F5E21781 /* CGPathAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 26FA5444D6E81EBA286433CACCCDC05B /* CGPathAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F27A5E48074EA80A48DF2E6C28358366 /* SVGSwitchElement.m in Sources */ = {isa = PBXBuildFile; fileRef = C749424D5E6387528D49FE15ED380EE1 /* SVGSwitchElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		F358219D146C35C34AF608B0BF1574EE /* SVGKSourceNSData.h in Headers */ = {isa = PBXBuildFile; fileRef = FCB5CAB376990FA10606C2DD3A4DC5F4 /* SVGKSourceNSData.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -356,82 +356,82 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		011CDDE69956B42FAE474311DBDC94B5 /* PBXContainerItemProxy */ = {
+		23D7EF7CE0319BBD181C75B0357CC28E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1EFDDC32A34D56D411E640A81DCD9E73;
-			remoteInfo = Flutter;
+			remoteGlobalIDString = B537A1FD6BC67DF7FE8C2B34E5CE6F19;
+			remoteInfo = SVGKit;
 		};
-		2FEE196D0B6E6AD386D707DAAE0AFBF2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EDCE3843D7663ACDA3406FFAC4F448D2;
-			remoteInfo = cupertino_native_better;
-		};
-		3D5983F7CFFEA8D64702B0E5E9B1A8FA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ADE86197C9EC7D5D7AB212E24AE13395;
-			remoteInfo = integration_test;
-		};
-		66476D6E2A358887803B7F3DC222B775 /* PBXContainerItemProxy */ = {
+		5295589B640EDC2B4BAF840E1B80778A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8B74B458B450D74B75744B87BD747314;
 			remoteInfo = "Pods-Runner";
 		};
-		834A6C1302FB3A4D3A67CB1B5AD0A96B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1EFDDC32A34D56D411E640A81DCD9E73;
-			remoteInfo = Flutter;
-		};
-		8B42BD8CFF260E3391351229F8795652 /* PBXContainerItemProxy */ = {
+		6F92E914108783973DA524E51A84DFD6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E95654B155D25890BE8E26081FCA8265;
 			remoteInfo = CocoaLumberjack;
 		};
-		BCDFFBA2BE6E320148F16553772CF388 /* PBXContainerItemProxy */ = {
+		96C6F9CFFAA6EF0F44232E30828F762F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1EFDDC32A34D56D411E640A81DCD9E73;
 			remoteInfo = Flutter;
 		};
-		CF898FBD20CEA748B633F6345EE904F2 /* PBXContainerItemProxy */ = {
+		A03AF982D4BF8F98340890792023728C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E95654B155D25890BE8E26081FCA8265;
+			remoteInfo = CocoaLumberjack;
+		};
+		B0F7D74EE2A318A1C61BF5132EFE524F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EFDDC32A34D56D411E640A81DCD9E73;
+			remoteInfo = Flutter;
+		};
+		C0EC68EA3B30D9407FD38B006F608FE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADE86197C9EC7D5D7AB212E24AE13395;
+			remoteInfo = integration_test;
+		};
+		C480A93509BBEDDC93A4E4BA20FF5C89 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B537A1FD6BC67DF7FE8C2B34E5CE6F19;
 			remoteInfo = SVGKit;
 		};
-		D798FBD6CB48173E88AE64D7CDBD0131 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B537A1FD6BC67DF7FE8C2B34E5CE6F19;
-			remoteInfo = SVGKit;
-		};
-		D85A0B83B2B8A8B77DEF34F6493E3FAE /* PBXContainerItemProxy */ = {
+		C5F5D8E49EA64B225CBAEBCF3DCEA6F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 276021C4482165D46E0CBBEFB822FE95;
 			remoteInfo = "CocoaLumberjack-CocoaLumberjackPrivacy";
 		};
-		E95EE44EFE80B023468442622539D2BE /* PBXContainerItemProxy */ = {
+		D6053E78F02DB9C80C34254DB08E05C5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E95654B155D25890BE8E26081FCA8265;
-			remoteInfo = CocoaLumberjack;
+			remoteGlobalIDString = 1EFDDC32A34D56D411E640A81DCD9E73;
+			remoteInfo = Flutter;
+		};
+		DEAFEED5358281D41FAFB331DD3A82FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDCE3843D7663ACDA3406FFAC4F448D2;
+			remoteInfo = cupertino_native_better;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -442,6 +442,7 @@
 		02DCCD98ED17553C9370A02FF69E6FA3 /* StyleSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = StyleSheet.m; path = "Source/DOM classes/Core DOM/StyleSheet.m"; sourceTree = "<group>"; };
 		03E41C725ACFD617D619B4B8BCD3B53F /* SVGElementInstanceList.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGElementInstanceList.m; path = "Source/DOM classes/SVG-DOM/SVGElementInstanceList.m"; sourceTree = "<group>"; };
 		03E8AD2E8B75443E12D3D3BD12A9900E /* Pods-RunnerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RunnerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		04AC15088C3829E80851698F13B07FF5 /* IntegrationTestIosTest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IntegrationTestIosTest.h; path = ../../../../../../../../../../../flutter/packages/integration_test/ios/integration_test/Sources/integration_test/include/IntegrationTestIosTest.h; sourceTree = "<group>"; };
 		04EEAA5A187ABD5C6B32417921CE6533 /* SVGKSourceString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKSourceString.h; path = Source/Sources/SVGKSourceString.h; sourceTree = "<group>"; };
 		074C94047C8666200BDE5F0037814E72 /* CSSRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSSRule.h; path = "Source/DOM classes/Core DOM/CSSRule.h"; sourceTree = "<group>"; };
 		0810EA11E0C9957E9AEE6B0BCD1965AE /* SVGGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGGradientLayer.m; path = "Source/QuartzCore additions/SVGGradientLayer.m"; sourceTree = "<group>"; };
@@ -469,11 +470,9 @@
 		1A86D9B67CC51CC42CC68D099C1053B9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		1B02C0DF053589EE0F442CCB3569CB60 /* DocumentFragment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DocumentFragment.h; path = "Source/DOM classes/Core DOM/DocumentFragment.h"; sourceTree = "<group>"; };
 		1B136F41D5B5FAE96EA576E768A5771D /* Pods-Runner-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Runner-acknowledgements.plist"; sourceTree = "<group>"; };
-		1B4D5C84F719D50F8FFE1FC694C7AF60 /* integration_test-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "integration_test-prefix.pch"; sourceTree = "<group>"; };
 		1BD4AB2D704446F27B38A5326B994E43 /* SVGDescriptionElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGDescriptionElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGDescriptionElement.h"; sourceTree = "<group>"; };
 		1C8325C119E0711DC18D58704F4DD6EE /* CupertinoSliderPlatformView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CupertinoSliderPlatformView.swift; path = ../../../../../../../../ios/Classes/Views/CupertinoSliderPlatformView.swift; sourceTree = "<group>"; };
 		1CBD56FE26291668A9D2C8DF64AE2955 /* SVGKFastImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKFastImageView.h; path = Source/ImageViews/SVGKFastImageView.h; sourceTree = "<group>"; };
-		1CCCCEFA81DD7E8841220805936928AC /* integration_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = integration_test.release.xcconfig; sourceTree = "<group>"; };
 		1CE8A77E05DC62473B9DC89F6E34ED74 /* DocumentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DocumentType.h; path = "Source/DOM classes/Core DOM/DocumentType.h"; sourceTree = "<group>"; };
 		1D0D74C5012115BADC1EB9AFAB52CA79 /* DDLoggerNames.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDLoggerNames.m; path = Sources/CocoaLumberjack/DDLoggerNames.m; sourceTree = "<group>"; };
 		1E320E58F9E9078D8397616FAFD6C80D /* SVGDescriptionElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGDescriptionElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGDescriptionElement.m"; sourceTree = "<group>"; };
@@ -517,15 +516,16 @@
 		362CBC70428C57FDD1F5874382F0BB97 /* DDLegacyMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLegacyMacros.h; path = "Sources/CocoaLumberjack/Supporting Files/DDLegacyMacros.h"; sourceTree = "<group>"; };
 		39EA11A71DA0DC3CBD491B9C095D52B2 /* Flutter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Flutter.release.xcconfig; sourceTree = "<group>"; };
 		3A2D02B062860416353A41B2F80E39BC /* DDAssertMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAssertMacros.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDAssertMacros.h; sourceTree = "<group>"; };
+		3B8966D7413205B898AA0127D7694834 /* integration_test-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "integration_test-Info.plist"; sourceTree = "<group>"; };
 		3B94690287B5CDE106643081B38A9BCC /* Text.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Text.h; path = "Source/DOM classes/Core DOM/Text.h"; sourceTree = "<group>"; };
 		3EE885519B16D4D15E6A950B8FD66F88 /* DDLoggerNames.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLoggerNames.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDLoggerNames.h; sourceTree = "<group>"; };
 		403A95C0F667548E3164174C8DB28FD7 /* SVGKParserPatternsAndGradients.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKParserPatternsAndGradients.h; path = "Source/Parsers/Parser Extensions/SVGKParserPatternsAndGradients.h"; sourceTree = "<group>"; };
 		403D14B7AEEEE65B9CDEE36D5AF282D8 /* SVGKPattern.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKPattern.m; path = Source/Utils/SVGKPattern.m; sourceTree = "<group>"; };
 		40D2F620370EC6E3F12849D896B9352D /* SVGGroupElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGGroupElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGGroupElement.m"; sourceTree = "<group>"; };
 		41B391908BBF47CFB54B5E0ACCCF353D /* SVGKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVGKit.debug.xcconfig; sourceTree = "<group>"; };
+		426436CA9576AEA83010DA065EF9E728 /* FLTIntegrationTestRunner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTIntegrationTestRunner.h; path = ../../../../../../../../../../../flutter/packages/integration_test/ios/integration_test/Sources/integration_test/include/FLTIntegrationTestRunner.h; sourceTree = "<group>"; };
 		4292CCD9BDFA403CDCD551623CFC62AF /* CSSValueList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSSValueList.h; path = "Source/DOM classes/Core DOM/CSSValueList.h"; sourceTree = "<group>"; };
 		43733EA5887A8C35A6D356FC5BE3294A /* SVGKImageRep.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKImageRep.m; path = "Source/AppKit additions/SVGKImageRep.m"; sourceTree = "<group>"; };
-		4444D801B4CECE97DABCE8C7EAA6EDDD /* integration_test-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "integration_test-umbrella.h"; sourceTree = "<group>"; };
 		44E65A6381E325220BE0F4DBC75EECF0 /* SVGGroupElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGGroupElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGGroupElement.h"; sourceTree = "<group>"; };
 		4529C36573A5C2FE19489CBF41E21039 /* SVGKImage+CGContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SVGKImage+CGContext.m"; path = "Source/Exporters/SVGKImage+CGContext.m"; sourceTree = "<group>"; };
 		459A58E461FB9910DB963664E2E9E1DB /* CupertinoPopupMenuButtonPlatformView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CupertinoPopupMenuButtonPlatformView.swift; path = ../../../../../../../../ios/Classes/Views/CupertinoPopupMenuButtonPlatformView.swift; sourceTree = "<group>"; };
@@ -552,10 +552,10 @@
 		51BE3EB013DC280BC62F3AFD741376AC /* SVGStyleCatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGStyleCatcher.h; path = "Source/DOM classes/Unported or Partial DOM/SVGStyleCatcher.h"; sourceTree = "<group>"; };
 		534E05371F702CCDC79A0F325560BEB7 /* cupertino_native_better-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "cupertino_native_better-prefix.pch"; sourceTree = "<group>"; };
 		536C526EDDA3C8E52F1AE592F01A2C65 /* CocoaLumberjack-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CocoaLumberjack-Info.plist"; sourceTree = "<group>"; };
+		537A7EDB4C11796AC5F6C68937036DA7 /* integration_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = integration_test.release.xcconfig; sourceTree = "<group>"; };
 		559E22AF8C50CCAFC36A130B1174C932 /* SVGTextElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGTextElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGTextElement.m"; sourceTree = "<group>"; };
 		55D81F590D2735EF35160F433DFD4170 /* SVGElementInstanceList_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGElementInstanceList_Internal.h; path = "Source/DOM classes/SVG-DOM/SVGElementInstanceList_Internal.h"; sourceTree = "<group>"; };
 		574B95708AAE83B2B373ED2D04C8121C /* Comment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Comment.h; path = "Source/DOM classes/Core DOM/Comment.h"; sourceTree = "<group>"; };
-		574D7766A16C34E39BE58F32FA9A6836 /* IntegrationTestIosTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IntegrationTestIosTest.m; path = ../../../../../../../../../../../../development/flutter/packages/integration_test/ios/integration_test/Sources/integration_test/IntegrationTestIosTest.m; sourceTree = "<group>"; };
 		582604B43C38A1187218048E99684FA6 /* SVGKImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKImage.m; path = Source/SVGKImage.m; sourceTree = "<group>"; };
 		5A09AB0E5411D505826CBB4B31A01A7C /* NSData+NSInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+NSInputStream.h"; path = "Source/Foundation additions/NSData+NSInputStream.h"; sourceTree = "<group>"; };
 		5A51A93223A498258960F62F2B7B9BE7 /* SVGElement_ForParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGElement_ForParser.h; path = "Source/DOM classes/Unported or Partial DOM/SVGElement_ForParser.h"; sourceTree = "<group>"; };
@@ -585,13 +585,12 @@
 		6D4658B751FE64EB4E8B1A74A3629EBA /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDContextFilterLogFormatter.m; path = Sources/CocoaLumberjack/Extensions/DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
 		6DBBF6218650773DB02EC4120E84634D /* CLIColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLIColor.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/CLIColor.h; sourceTree = "<group>"; };
 		6E25A0E411EE67641B78AC2DDCE1DEAF /* SVGKPointsAndPathsParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKPointsAndPathsParser.m; path = Source/Parsers/SVGKPointsAndPathsParser.m; sourceTree = "<group>"; };
-		6E2A63034C14351EA46579C3222100C0 /* integration_test-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "integration_test-Info.plist"; sourceTree = "<group>"; };
+		6E399DAD60D4A354E3091151831E60E5 /* integration_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = integration_test.debug.xcconfig; sourceTree = "<group>"; };
 		6E96D32244E5133F8B9E9B6DAB8EE70C /* SVGKParserStyles.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKParserStyles.h; path = "Source/Parsers/Parser Extensions/SVGKParserStyles.h"; sourceTree = "<group>"; };
 		6FDF80E3DD7287B0FC8C6A37FE19EA0B /* CocoaLumberjack-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-prefix.pch"; sourceTree = "<group>"; };
 		700DA7C1047A0BB0DAA333D3F58C03AC /* DOMHelperUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DOMHelperUtilities.h; path = "Source/DOM classes/Core DOM/DOMHelperUtilities.h"; sourceTree = "<group>"; };
 		728A5ED1DD60BAC8C8F382A87B976F84 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
 		72BA207618F19A869AE3E722BB464391 /* SVGLineElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGLineElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGLineElement.h"; sourceTree = "<group>"; };
-		738E1CB2F391C84D5B7AECC22780FA49 /* integration_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = integration_test.debug.xcconfig; sourceTree = "<group>"; };
 		73F060DE80F9F1F921502DC3D77D5A04 /* SVGKParseResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKParseResult.h; path = Source/Parsers/SVGKParseResult.h; sourceTree = "<group>"; };
 		748C3BF6D24E8B8BEB55264F6214F981 /* CocoaLumberjack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaLumberjack.debug.xcconfig; sourceTree = "<group>"; };
 		75F229D87E65C75731888B2FBBCD27F5 /* SVGHelperUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGHelperUtilities.h; path = "Source/DOM classes/SVG-DOM/SVGHelperUtilities.h"; sourceTree = "<group>"; };
@@ -602,7 +601,9 @@
 		7912B249616A2F67C392E5572D96626F /* AppleSucksDOMImplementation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AppleSucksDOMImplementation.m; path = "Source/DOM classes/Core DOM/AppleSucksDOMImplementation.m"; sourceTree = "<group>"; };
 		79CC2A159C52A9A11A42A1C2289B0966 /* SVGKImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKImageView.h; path = Source/ImageViews/SVGKImageView.h; sourceTree = "<group>"; };
 		79F83F4D505FA40C1CD18A8029181D59 /* Pods-RunnerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RunnerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7A1331D07F6C29B00F5E6F2ADACF6A92 /* IntegrationTestPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IntegrationTestPlugin.m; path = ../../../../../../../../../../flutter/packages/integration_test/ios/integration_test/Sources/integration_test/IntegrationTestPlugin.m; sourceTree = "<group>"; };
 		7B5303BECA2A6142C6A99B312C486D6D /* Flutter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Flutter.debug.xcconfig; sourceTree = "<group>"; };
+		7BA8EFC410259111CD07696B47D62CB8 /* integration_test-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "integration_test-prefix.pch"; sourceTree = "<group>"; };
 		7BFD17A886396AA1A68BCC8BCCEC4FE9 /* SVGDefsElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGDefsElement.m; path = "Source/DOM classes/SVG-DOM/SVGDefsElement.m"; sourceTree = "<group>"; };
 		7C894A060673CDF4F2B1B50E5C444E5B /* SVGKSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKSource.m; path = Source/SVGKSource.m; sourceTree = "<group>"; };
 		7D0A7C43ED31544B8A83826865F335B9 /* SVGGradientElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGGradientElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGGradientElement.h"; sourceTree = "<group>"; };
@@ -616,7 +617,6 @@
 		8513E8FEC19D257B21C19370CCAB08CB /* NodeList+Mutable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NodeList+Mutable.h"; path = "Source/DOM classes/Core DOM/NodeList+Mutable.h"; sourceTree = "<group>"; };
 		859A4664D5A420B637E714FA3C683A9F /* CupertinoTabBarPlatformView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CupertinoTabBarPlatformView.swift; path = ../../../../../../../../ios/Classes/Views/CupertinoTabBarPlatformView.swift; sourceTree = "<group>"; };
 		85DD01458D5CC586550231DD8A2F56BE /* DDLogMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLogMacros.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDLogMacros.h; sourceTree = "<group>"; };
-		86E328DF149091EBBE55F06FAF682AF5 /* integration_test.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = integration_test.podspec; path = ../../../../../../../../../development/flutter/packages/integration_test/ios/integration_test.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		86EFE95E174BDB2F759B7D09A249FD64 /* SVGLinearGradientElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGLinearGradientElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGLinearGradientElement.h"; sourceTree = "<group>"; };
 		870E2C4E835F76C7FC369B244822F4D9 /* SVGUnitTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGUnitTypes.h; path = "Source/DOM classes/SVG-DOM/SVGUnitTypes.h"; sourceTree = "<group>"; };
 		874228FC1CE6E546A95BE023CA5702C6 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAbstractDatabaseLogger.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
@@ -640,6 +640,7 @@
 		92C9CA506EB4702FD82AE2E1F59773BD /* CupertinoGlassButtonGroupFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CupertinoGlassButtonGroupFactory.swift; path = ../../../../../../../../ios/Classes/Factories/CupertinoGlassButtonGroupFactory.swift; sourceTree = "<group>"; };
 		92F59A87502C27A9546E0F9737623F22 /* DOMGlobalSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DOMGlobalSettings.h; path = "Source/DOM classes/Core DOM/DOMGlobalSettings.h"; sourceTree = "<group>"; };
 		932B339FE79CA42D8BC7DCE1246B2291 /* DDContextFilterLogFormatter+Deprecated.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDContextFilterLogFormatter+Deprecated.h"; path = "Sources/CocoaLumberjack/include/CocoaLumberjack/DDContextFilterLogFormatter+Deprecated.h"; sourceTree = "<group>"; };
+		94CD497D901F169CAF6402C1584A2DD9 /* FLTIntegrationTestRunner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTIntegrationTestRunner.m; path = ../../../../../../../../../../flutter/packages/integration_test/ios/integration_test/Sources/integration_test/FLTIntegrationTestRunner.m; sourceTree = "<group>"; };
 		9624A1BA1F067DF6EE3D9700E09B27B1 /* SVGKLayeredImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKLayeredImageView.m; path = Source/ImageViews/SVGKLayeredImageView.m; sourceTree = "<group>"; };
 		96D80A8591D50925CFF615B2B0243242 /* DocumentStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DocumentStyle.h; path = "Source/DOM classes/Core DOM/DocumentStyle.h"; sourceTree = "<group>"; };
 		97012DAE10F4F6954AC59EF9EEACB0EB /* SVGAnimatedPreserveAspectRatio.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGAnimatedPreserveAspectRatio.m; path = "Source/DOM classes/SVG-DOM/SVGAnimatedPreserveAspectRatio.m"; sourceTree = "<group>"; };
@@ -657,6 +658,7 @@
 		9CD599DDE3C461A024816048C2E8C74A /* SVGKSourceString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKSourceString.m; path = Source/Sources/SVGKSourceString.m; sourceTree = "<group>"; };
 		9D5413137C558B6D45CD01F0A6ECFB9C /* CSSStyleSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSSStyleSheet.m; path = "Source/DOM classes/Core DOM/CSSStyleSheet.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E72906B489A1C22E8D3E05CBB756C8F /* IntegrationTestIosTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IntegrationTestIosTest.m; path = ../../../../../../../../../../flutter/packages/integration_test/ios/integration_test/Sources/integration_test/IntegrationTestIosTest.m; sourceTree = "<group>"; };
 		9E921903354DB6918BBE69F34A30BB84 /* SVGMatrix.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGMatrix.m; path = "Source/DOM classes/SVG-DOM/SVGMatrix.m"; sourceTree = "<group>"; };
 		9E9B12BCE5540D02A80250C3EC16D399 /* Pods-RunnerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RunnerTests-umbrella.h"; sourceTree = "<group>"; };
 		A0FA4DD2074779EE44B49C0F44E5EB65 /* Node+Mutable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Node+Mutable.h"; path = "Source/DOM classes/Core DOM/Node+Mutable.h"; sourceTree = "<group>"; };
@@ -675,7 +677,6 @@
 		AC69976DD3AA86755CB73B1968208A2E /* SVGElementInstance_Mutable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGElementInstance_Mutable.h; path = "Source/DOM classes/SVG-DOM/SVGElementInstance_Mutable.h"; sourceTree = "<group>"; };
 		AC8FE152530FBDCE460186B326C1A8FB /* Pods-RunnerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RunnerTests.release.xcconfig"; sourceTree = "<group>"; };
 		ADF3001ACF93D763A8CAD56315297123 /* CupertinoSwitchPlatformView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CupertinoSwitchPlatformView.swift; path = ../../../../../../../../ios/Classes/Views/CupertinoSwitchPlatformView.swift; sourceTree = "<group>"; };
-		AE46DE9FF88782A3666FE5A7E109D98B /* FLTIntegrationTestRunner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLTIntegrationTestRunner.h; path = ../../../../../../../../../../../../../development/flutter/packages/integration_test/ios/integration_test/Sources/integration_test/include/FLTIntegrationTestRunner.h; sourceTree = "<group>"; };
 		AE7CDBEAFCBC8E6BC981EE503EF93C38 /* SVGCircleElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGCircleElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGCircleElement.h"; sourceTree = "<group>"; };
 		AEC1F0151DF07BEFC8EEA12A5962BA2E /* GlassButtonSwiftUI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlassButtonSwiftUI.swift; path = ../../../../../../../../ios/Classes/Views/GlassButtonSwiftUI.swift; sourceTree = "<group>"; };
 		AF2ADDD9B66D26C9D15F812BF54DCFEE /* SVGElementInstanceList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGElementInstanceList.h; path = "Source/DOM classes/SVG-DOM/SVGElementInstanceList.h"; sourceTree = "<group>"; };
@@ -683,9 +684,9 @@
 		B01B24E857704660CB6F000FCF699EA0 /* SVGGradientStop.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGGradientStop.h; path = "Source/DOM classes/Unported or Partial DOM/SVGGradientStop.h"; sourceTree = "<group>"; };
 		B0BD57AB3672E53828D11C2A3368023A /* Pods-RunnerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RunnerTests.modulemap"; sourceTree = "<group>"; };
 		B22E8471A5BCCE1F7CB4CE31BE3F9909 /* LiquidGlassContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidGlassContainerView.swift; path = ../../../../../../../../ios/Classes/Views/LiquidGlassContainerView.swift; sourceTree = "<group>"; };
+		B243559166003CECB0F6FC3716621A90 /* IntegrationTestPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IntegrationTestPlugin.h; path = ../../../../../../../../../../../flutter/packages/integration_test/ios/integration_test/Sources/integration_test/include/IntegrationTestPlugin.h; sourceTree = "<group>"; };
 		B26A91534014485D0757A1668749CAFC /* CSSRuleList.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSSRuleList.m; path = "Source/DOM classes/Core DOM/CSSRuleList.m"; sourceTree = "<group>"; };
 		B2DFC88F99745F9B92A4559002D24C31 /* CLIColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLIColor.m; path = Sources/CocoaLumberjack/CLI/CLIColor.m; sourceTree = "<group>"; };
-		B33D782B73AA9D90F1D39CC5A43B9953 /* IntegrationTestPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IntegrationTestPlugin.m; path = ../../../../../../../../../../../../development/flutter/packages/integration_test/ios/integration_test/Sources/integration_test/IntegrationTestPlugin.m; sourceTree = "<group>"; };
 		B3CD8187A199C3BA0928C306258808AD /* SVGGradientElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGGradientElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGGradientElement.m"; sourceTree = "<group>"; };
 		B46124376C51AA0D3F7DE84C2D301701 /* SVGImageLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGImageLoader.swift; path = ../../../../../../../../ios/Classes/Utils/SVGImageLoader.swift; sourceTree = "<group>"; };
 		B498ADD5E58227FFE7DCB564985D3CCB /* SVGKParserDefsAndUse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKParserDefsAndUse.h; path = "Source/Parsers/Parser Extensions/SVGKParserDefsAndUse.h"; sourceTree = "<group>"; };
@@ -706,6 +707,7 @@
 		BDA25B9ED2025C170DB8FC7B1F016EF5 /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDDispatchQueueLogFormatter.h; path = Sources/CocoaLumberjack/include/CocoaLumberjack/DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
 		BE0B6008F0B660D9BD27A23829A3B44A /* CSSStyleSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSSStyleSheet.h; path = "Source/DOM classes/Core DOM/CSSStyleSheet.h"; sourceTree = "<group>"; };
 		BE3109C27EDCF128C4EB780F4A674D26 /* CharacterData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CharacterData.m; path = "Source/DOM classes/Core DOM/CharacterData.m"; sourceTree = "<group>"; };
+		BFF93843B25361F6FF30C56D408D6994 /* integration_test.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = integration_test.podspec; path = ../../../../../../../flutter/packages/integration_test/ios/integration_test.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C11BB0A80D2F59E153E74119E558B5CE /* CupertinoIconFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CupertinoIconFactory.swift; path = ../../../../../../../../ios/Classes/Factories/CupertinoIconFactory.swift; sourceTree = "<group>"; };
 		C15D7DEBED379F83B2E7B8F833D38302 /* SVGKSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKSource.h; path = Source/SVGKSource.h; sourceTree = "<group>"; };
 		C217872E177CE637A6CF541D8694B638 /* SVGGradientStop.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGGradientStop.m; path = "Source/DOM classes/Unported or Partial DOM/SVGGradientStop.m"; sourceTree = "<group>"; };
@@ -715,9 +717,9 @@
 		C2B681A75EC168E8AC3E01DD5BFC7C60 /* SVGElementInstance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGElementInstance.h; path = "Source/DOM classes/SVG-DOM/SVGElementInstance.h"; sourceTree = "<group>"; };
 		C438CF39277A5FA884B1B845A03E7C3F /* CSSStyleRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSSStyleRule.h; path = "Source/DOM classes/Core DOM/CSSStyleRule.h"; sourceTree = "<group>"; };
 		C457B87ACFB0561C01B5FFAD8C3C31EF /* SVGTitleElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGTitleElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGTitleElement.m"; sourceTree = "<group>"; };
+		C4C653B6D84A09AAE389E3D85F9BB10E /* integration_test-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "integration_test-dummy.m"; sourceTree = "<group>"; };
 		C50FD10CD19FF6999637BA5ECAF1681B /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
 		C51B0685D60AC555690B8E4BFF18F7B5 /* SwitchShared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwitchShared.swift; path = ../../../../../../../../ios/Classes/Shared/SwitchShared.swift; sourceTree = "<group>"; };
-		C61F4F072FB5B0D52994322CD9A69330 /* integration_test-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "integration_test-dummy.m"; sourceTree = "<group>"; };
 		C6407BEE5DF9E0589406BC9DEF153008 /* NodeList.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NodeList.m; path = "Source/DOM classes/Core DOM/NodeList.m"; sourceTree = "<group>"; };
 		C6A934731293D1C7909D2E5C59ADED73 /* SVGPathElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGPathElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGPathElement.m"; sourceTree = "<group>"; };
 		C749424D5E6387528D49FE15ED380EE1 /* SVGSwitchElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGSwitchElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGSwitchElement.m"; sourceTree = "<group>"; };
@@ -729,8 +731,8 @@
 		CC17998A9AF9812BC0A8DA145DC67ACC /* NSData+NSInputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+NSInputStream.m"; path = "Source/Foundation additions/NSData+NSInputStream.m"; sourceTree = "<group>"; };
 		CC2119C239DF04A71195BF79EA644D72 /* SVGTextLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGTextLayer.m; path = "Source/QuartzCore additions/SVGTextLayer.m"; sourceTree = "<group>"; };
 		CC295E0E55122077217077EE7FCCB50F /* SVGKParserGradient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKParserGradient.m; path = "Source/Parsers/Parser Extensions/SVGKParserGradient.m"; sourceTree = "<group>"; };
-		CC5012E516323FBF9DE011FA6A1690E5 /* FLTIntegrationTestRunner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLTIntegrationTestRunner.m; path = ../../../../../../../../../../../../development/flutter/packages/integration_test/ios/integration_test/Sources/integration_test/FLTIntegrationTestRunner.m; sourceTree = "<group>"; };
 		CC6B8D98A22E7045510854E5B0A207AB /* SVGLinearGradientElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGLinearGradientElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGLinearGradientElement.m"; sourceTree = "<group>"; };
+		CCFD98FD112F25FDEE04E9F62986B149 /* integration_test.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = integration_test.modulemap; sourceTree = "<group>"; };
 		CEAB697ACAA019763B5FB2482FC6AACC /* CupertinoSegmentedControlFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CupertinoSegmentedControlFactory.swift; path = ../../../../../../../../ios/Classes/Factories/CupertinoSegmentedControlFactory.swift; sourceTree = "<group>"; };
 		CFE9920E1288D9EA97EEE3F73EA38D13 /* TinySVGTextAreaElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TinySVGTextAreaElement.h; path = "Source/DOM classes/Unported or Partial DOM/TinySVGTextAreaElement.h"; sourceTree = "<group>"; };
 		CFF062D85F4ADE7F3037F9010377E31E /* SVGKImage+CGContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SVGKImage+CGContext.h"; path = "Source/Exporters/SVGKImage+CGContext.h"; sourceTree = "<group>"; };
@@ -739,10 +741,10 @@
 		D3F6456B110A8B79EE6AA8BBCFEE5E64 /* SVGStyleElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGStyleElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGStyleElement.m"; sourceTree = "<group>"; };
 		D4A5911CA3145789AB7194A6C68473A9 /* cupertino_native_better-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "cupertino_native_better-dummy.m"; sourceTree = "<group>"; };
 		D4CAFFE16E6004C1ADEF89E0C574CC16 /* CALayerWithChildHitTest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CALayerWithChildHitTest.h; path = "Source/QuartzCore additions/CALayerWithChildHitTest.h"; sourceTree = "<group>"; };
+		D57EBBBC09A7503AAF9906A1FB3D4257 /* integration_test-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "integration_test-umbrella.h"; sourceTree = "<group>"; };
 		D5C229A4A278FA29B535557D707929EE /* cupertino_native_better-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "cupertino_native_better-umbrella.h"; sourceTree = "<group>"; };
 		D608780DD21331AAC22D1569A7A43532 /* Comment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Comment.m; path = "Source/DOM classes/Core DOM/Comment.m"; sourceTree = "<group>"; };
 		D679EE2E5988158DA39C99D82F84F2AE /* SVGSVGElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGSVGElement.m; path = "Source/DOM classes/Unported or Partial DOM/SVGSVGElement.m"; sourceTree = "<group>"; };
-		D695E413A8B5AA71EDE905A637A8690E /* integration_test.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = integration_test.modulemap; sourceTree = "<group>"; };
 		D70F089A6A95ED4600296AF425F7697D /* SVGStyleElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGStyleElement.h; path = "Source/DOM classes/Unported or Partial DOM/SVGStyleElement.h"; sourceTree = "<group>"; };
 		D7F8A98C01885E534B2D902DDEC96376 /* SVGViewSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGViewSpec.h; path = "Source/DOM classes/SVG-DOM/SVGViewSpec.h"; sourceTree = "<group>"; };
 		D85E7030B06CA295F8CECD11085B1E0C /* EntityReference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EntityReference.m; path = "Source/DOM classes/Core DOM/EntityReference.m"; sourceTree = "<group>"; };
@@ -758,7 +760,6 @@
 		DBE99FDC2801C0128C17EB05B912452E /* Document.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Document.h; path = "Source/DOM classes/Core DOM/Document.h"; sourceTree = "<group>"; };
 		DC1C1E86CF930B7015642FAB2C97CC92 /* SVGTextContentElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGTextContentElement.h; path = "Source/DOM classes/SVG-DOM/SVGTextContentElement.h"; sourceTree = "<group>"; };
 		DCBCF5B45A8296124EE4B903280AC320 /* Document+Mutable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Document+Mutable.h"; path = "Source/DOM classes/Core DOM/Document+Mutable.h"; sourceTree = "<group>"; };
-		DCCD578B251DD2035CF0C05782A9C104 /* IntegrationTestPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IntegrationTestPlugin.h; path = ../../../../../../../../../../../../../development/flutter/packages/integration_test/ios/integration_test/Sources/integration_test/include/IntegrationTestPlugin.h; sourceTree = "<group>"; };
 		DEC688578AD542450841E78B2B1CEE67 /* SVGKImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKImageView.m; path = Source/ImageViews/SVGKImageView.m; sourceTree = "<group>"; };
 		DEE9980925188D3F7C938CAE3B41B671 /* SVGKExporterUIImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVGKExporterUIImage.h; path = Source/Exporters/SVGKExporterUIImage.h; sourceTree = "<group>"; };
 		DFDB7DAAE2EABB12BAADFB1E32F4CF64 /* SVGKParserPatternsAndGradients.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVGKParserPatternsAndGradients.m; path = "Source/Parsers/Parser Extensions/SVGKParserPatternsAndGradients.m"; sourceTree = "<group>"; };
@@ -799,7 +800,6 @@
 		F6B7BE0BFB43297D3370A413005B1B9C /* SVGKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVGKit.release.xcconfig; sourceTree = "<group>"; };
 		F7338F9D6014E616BDAD24A302B7ADBF /* Attr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Attr.h; path = "Source/DOM classes/Core DOM/Attr.h"; sourceTree = "<group>"; };
 		F8437BE58881E63196CF1F80191B3E2F /* SVGKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVGKit; path = SVGKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F98B8FEF7B1DB8C5CC2EA7104D381B7D /* IntegrationTestIosTest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IntegrationTestIosTest.h; path = ../../../../../../../../../../../../../development/flutter/packages/integration_test/ios/integration_test/Sources/integration_test/include/IntegrationTestIosTest.h; sourceTree = "<group>"; };
 		F9BF5A1995A3EF62BB3E4BF8D7588E81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		FA3CC813A00AF1837DCB3B6C66901DD6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../../../../../../LICENSE; sourceTree = "<group>"; };
 		FAA47E129F76EFA1393C4410A2D9D77B /* StyleSheetList+Mutable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "StyleSheetList+Mutable.h"; path = "Source/DOM classes/Core DOM/StyleSheetList+Mutable.h"; sourceTree = "<group>"; };
@@ -824,13 +824,6 @@
 				BB0164F61A2240E0F3B19340B27A1334 /* CoreText.framework in Frameworks */,
 				11ABAA838C48AF2E571739A401FBF880 /* Foundation.framework in Frameworks */,
 				4C7F7FCB48A4F94B893B76EFD4478142 /* QuartzCore.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1D03157AB3137967F7D2524936B186C8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -875,18 +868,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EE493CB363266FE0124A11F1A65CBFBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0260317EB269B689E46D5D75BF38A380 /* Documents */ = {
-			isa = PBXGroup;
-			children = (
-				520BBFD36CB0BD607F18313C77C3F781 /* flutter projects */,
-			);
-			name = Documents;
-			path = Documents;
-			sourceTree = "<group>";
-		};
 		057A5F7E4D3BA0536F45F74CF94702DA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -911,15 +902,6 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		093D14785DE4F5D05A5CE735A0406028 /* .. */ = {
-			isa = PBXGroup;
-			children = (
-				AD3C794C26D633BB60E23516B7D084C5 /* .. */,
-			);
-			name = ..;
-			path = ..;
-			sourceTree = "<group>";
-		};
 		0CCB3C30F3E68264028DE49D42CD850A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -935,21 +917,36 @@
 			path = "../../../../Pods/Target Support Files/cupertino_native_better";
 			sourceTree = "<group>";
 		};
-		1BC96D60604C95686FDE6357F9D01409 /* integration_test */ = {
+		0F144AB7779D13009527A2B2A0F63219 /* integration_test */ = {
 			isa = PBXGroup;
 			children = (
-				A5AFEE19CE9E985D4B81CCDBDB8FF1B6 /* Sources */,
+				E1D031E37018C9DCC87160A17F180B19 /* .. */,
+				4B736E0251BF543467D483EC6F4760E5 /* Pod */,
+				F4CEB24E40282B79248AA4C948BBD89F /* Support Files */,
+			);
+			name = integration_test;
+			path = ../.symlinks/plugins/integration_test/ios;
+			sourceTree = "<group>";
+		};
+		0FCDBD2A88708106CF0A1393B4DF88E5 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				5EA27AD2AEC63222FD87105CE3AD2DF8 /* integration_test */,
+			);
+			name = ios;
+			path = ios;
+			sourceTree = "<group>";
+		};
+		13F1DB8F7302F9131CC76A04A32E204A /* integration_test */ = {
+			isa = PBXGroup;
+			children = (
+				94CD497D901F169CAF6402C1584A2DD9 /* FLTIntegrationTestRunner.m */,
+				9E72906B489A1C22E8D3E05CBB756C8F /* IntegrationTestIosTest.m */,
+				7A1331D07F6C29B00F5E6F2ADACF6A92 /* IntegrationTestPlugin.m */,
+				2A6C128C5A2554F0195DB60FEEF8091B /* include */,
 			);
 			name = integration_test;
 			path = integration_test;
-			sourceTree = "<group>";
-		};
-		1F2F55B1993301D0BFCE63BE69C29293 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				86E328DF149091EBBE55F06FAF682AF5 /* integration_test.podspec */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		28E538BE7219BEFDF11166440C2E8B29 /* Classes */ = {
@@ -965,6 +962,17 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		2A6C128C5A2554F0195DB60FEEF8091B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				426436CA9576AEA83010DA065EF9E728 /* FLTIntegrationTestRunner.h */,
+				04AC15088C3829E80851698F13B07FF5 /* IntegrationTestIosTest.h */,
+				B243559166003CECB0F6FC3716621A90 /* IntegrationTestPlugin.h */,
+			);
+			name = include;
+			path = include;
+			sourceTree = "<group>";
+		};
 		2DB8426A477BA92773F00012EBA84D53 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -974,21 +982,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		3185E54975F430A6A785C27D438EDD47 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D695E413A8B5AA71EDE905A637A8690E /* integration_test.modulemap */,
-				C61F4F072FB5B0D52994322CD9A69330 /* integration_test-dummy.m */,
-				6E2A63034C14351EA46579C3222100C0 /* integration_test-Info.plist */,
-				1B4D5C84F719D50F8FFE1FC694C7AF60 /* integration_test-prefix.pch */,
-				4444D801B4CECE97DABCE8C7EAA6EDDD /* integration_test-umbrella.h */,
-				738E1CB2F391C84D5B7AECC22780FA49 /* integration_test.debug.xcconfig */,
-				1CCCCEFA81DD7E8841220805936928AC /* integration_test.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../../../../Pods/Target Support Files/integration_test";
-			sourceTree = "<group>";
-		};
 		3404132819A9684CD93ECDB07C641871 /* .symlinks */ = {
 			isa = PBXGroup;
 			children = (
@@ -996,15 +989,6 @@
 			);
 			name = .symlinks;
 			path = .symlinks;
-			sourceTree = "<group>";
-		};
-		3663A2443AC988DBFD03009FC73C40DE /* .. */ = {
-			isa = PBXGroup;
-			children = (
-				093D14785DE4F5D05A5CE735A0406028 /* .. */,
-			);
-			name = ..;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		3B7F2311A4A37930450607FEA112CA0D /* Pods */ = {
@@ -1054,31 +1038,12 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
-		4B2EFD652C05508E523B3A17CB68DF4D /* .symlinks */ = {
+		4B736E0251BF543467D483EC6F4760E5 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				93A935EC6FF8787D1F948EFD9A9EF18F /* plugins */,
+				BFF93843B25361F6FF30C56D408D6994 /* integration_test.podspec */,
 			);
-			name = .symlinks;
-			path = .symlinks;
-			sourceTree = "<group>";
-		};
-		51B378AC424904E33469045666920F45 /* .. */ = {
-			isa = PBXGroup;
-			children = (
-				0260317EB269B689E46D5D75BF38A380 /* Documents */,
-			);
-			name = ..;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		520BBFD36CB0BD607F18313C77C3F781 /* flutter projects */ = {
-			isa = PBXGroup;
-			children = (
-				9F4D0C495B827EACC65A6DF50487B25D /* cupertino_native_better */,
-			);
-			name = "flutter projects";
-			path = "flutter projects";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		535FB990B93E943F1250FE7413102570 /* Development Pods */ = {
@@ -1086,7 +1051,7 @@
 			children = (
 				BCE71F946BBEAF85AEF799B8B80B27DD /* cupertino_native_better */,
 				F24CB461FA7C833369D3BC1B233A5B07 /* Flutter */,
-				6D9A7915D1884CC3C97208FF42C52361 /* integration_test */,
+				0F144AB7779D13009527A2B2A0F63219 /* integration_test */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -1108,6 +1073,15 @@
 			path = "Target Support Files/Pods-RunnerTests";
 			sourceTree = "<group>";
 		};
+		573FCF71016880ABFAF05C971F5662F7 /* example */ = {
+			isa = PBXGroup;
+			children = (
+				7CAB0591FCBDE0196306956C19CA94C0 /* ios */,
+			);
+			name = example;
+			path = example;
+			sourceTree = "<group>";
+		};
 		5C5A59A0D4B8B11E57D132B1F41BF386 /* ios */ = {
 			isa = PBXGroup;
 			children = (
@@ -1117,24 +1091,31 @@
 			path = ios;
 			sourceTree = "<group>";
 		};
-		685041414ECDF6A90E5B51676B570643 /* .. */ = {
+		5EA27AD2AEC63222FD87105CE3AD2DF8 /* integration_test */ = {
 			isa = PBXGroup;
 			children = (
-				AADAB267861F19C0BF9E7E36910EF0F7 /* .. */,
-			);
-			name = ..;
-			path = ../../../../../../../../../development/flutter/packages/integration_test/ios/integration_test/Sources;
-			sourceTree = "<group>";
-		};
-		6D9A7915D1884CC3C97208FF42C52361 /* integration_test */ = {
-			isa = PBXGroup;
-			children = (
-				685041414ECDF6A90E5B51676B570643 /* .. */,
-				1F2F55B1993301D0BFCE63BE69C29293 /* Pod */,
-				3185E54975F430A6A785C27D438EDD47 /* Support Files */,
+				5ED19949765E76C1F48397438A704850 /* Sources */,
 			);
 			name = integration_test;
-			path = ../.symlinks/plugins/integration_test/ios;
+			path = integration_test;
+			sourceTree = "<group>";
+		};
+		5ED19949765E76C1F48397438A704850 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				13F1DB8F7302F9131CC76A04A32E204A /* integration_test */,
+			);
+			name = Sources;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		6C3A392D5C2F87BA79BF0045C9477A52 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				DF563384ED6882C57CF9396F57E6EB34 /* .. */,
+			);
+			name = ..;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		6F85AFC01ABC821FE2B11CA1682C00FE /* example */ = {
@@ -1146,17 +1127,6 @@
 			path = example;
 			sourceTree = "<group>";
 		};
-		71B267E87F45D911C82C1EC83F94DA16 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				AE46DE9FF88782A3666FE5A7E109D98B /* FLTIntegrationTestRunner.h */,
-				F98B8FEF7B1DB8C5CC2EA7104D381B7D /* IntegrationTestIosTest.h */,
-				DCCD578B251DD2035CF0C05782A9C104 /* IntegrationTestPlugin.h */,
-			);
-			name = include;
-			path = include;
-			sourceTree = "<group>";
-		};
 		722C8345EDA92F26598BF7A346B1BBA7 /* CocoaLumberjack */ = {
 			isa = PBXGroup;
 			children = (
@@ -1165,6 +1135,33 @@
 			);
 			name = CocoaLumberjack;
 			path = CocoaLumberjack;
+			sourceTree = "<group>";
+		};
+		74249BCA8DE8B82612DE04A0D5DA4FAB /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				6C3A392D5C2F87BA79BF0045C9477A52 /* .. */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		7B06904CACCDAC9378D30CFE437DC2CF /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				74249BCA8DE8B82612DE04A0D5DA4FAB /* .. */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		7CAB0591FCBDE0196306956C19CA94C0 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				90D730D24268D4991B28CA1F593DA001 /* .symlinks */,
+			);
+			name = ios;
+			path = ios;
 			sourceTree = "<group>";
 		};
 		7EA052BBDDC69B61DE09DA42C14BCB05 /* Views */ = {
@@ -1188,22 +1185,10 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		823D33B8AD6254B2F758373F7BCBE0E1 /* integration_test */ = {
+		83800D59DACDEB2362F50DA6B5BE8102 /* .. */ = {
 			isa = PBXGroup;
 			children = (
-				CC5012E516323FBF9DE011FA6A1690E5 /* FLTIntegrationTestRunner.m */,
-				574D7766A16C34E39BE58F32FA9A6836 /* IntegrationTestIosTest.m */,
-				B33D782B73AA9D90F1D39CC5A43B9953 /* IntegrationTestPlugin.m */,
-				71B267E87F45D911C82C1EC83F94DA16 /* include */,
-			);
-			name = integration_test;
-			path = integration_test;
-			sourceTree = "<group>";
-		};
-		8830B291B597710D03B89984C9DBF530 /* .. */ = {
-			isa = PBXGroup;
-			children = (
-				ED35F551AFA2EBEBCCDFDE7AAFD7473D /* .. */,
+				9CB337E052C772218581AD75226261E6 /* cupertino_native_better */,
 			);
 			name = ..;
 			path = ..;
@@ -1232,31 +1217,31 @@
 			path = "../Target Support Files/SVGKit";
 			sourceTree = "<group>";
 		};
-		93A935EC6FF8787D1F948EFD9A9EF18F /* plugins */ = {
+		90D730D24268D4991B28CA1F593DA001 /* .symlinks */ = {
 			isa = PBXGroup;
 			children = (
-				CB74DAC3401AB86F948A748AF5BE4D83 /* integration_test */,
+				B7B025953AC49D6B89D44C06CD00A429 /* plugins */,
 			);
-			name = plugins;
-			path = plugins;
+			name = .symlinks;
+			path = .symlinks;
 			sourceTree = "<group>";
 		};
-		9F4D0C495B827EACC65A6DF50487B25D /* cupertino_native_better */ = {
+		9CB337E052C772218581AD75226261E6 /* cupertino_native_better */ = {
 			isa = PBXGroup;
 			children = (
-				AA51CB15FD4E19C9AFC6966F4CBFB9DE /* example */,
+				573FCF71016880ABFAF05C971F5662F7 /* example */,
 			);
 			name = cupertino_native_better;
 			path = cupertino_native_better;
 			sourceTree = "<group>";
 		};
-		A5AFEE19CE9E985D4B81CCDBDB8FF1B6 /* Sources */ = {
+		A976687A686C564DFB11A0DA23F5817A /* .. */ = {
 			isa = PBXGroup;
 			children = (
-				823D33B8AD6254B2F758373F7BCBE0E1 /* integration_test */,
+				7B06904CACCDAC9378D30CFE437DC2CF /* .. */,
 			);
-			name = Sources;
-			path = Sources;
+			name = ..;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		AA4E25A99CCDD287E65872E82C7D3C00 /* iOS */ = {
@@ -1268,24 +1253,6 @@
 				1A86D9B67CC51CC42CC68D099C1053B9 /* UIKit.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		AA51CB15FD4E19C9AFC6966F4CBFB9DE /* example */ = {
-			isa = PBXGroup;
-			children = (
-				D27803466B4D14766F730736DC2E96A1 /* ios */,
-			);
-			name = example;
-			path = example;
-			sourceTree = "<group>";
-		};
-		AADAB267861F19C0BF9E7E36910EF0F7 /* .. */ = {
-			isa = PBXGroup;
-			children = (
-				3663A2443AC988DBFD03009FC73C40DE /* .. */,
-			);
-			name = ..;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		AC145A9682FEA94707C77C70B910BA2D /* SVGKit */ = {
@@ -1537,15 +1504,6 @@
 			path = SVGKit;
 			sourceTree = "<group>";
 		};
-		AD3C794C26D633BB60E23516B7D084C5 /* .. */ = {
-			isa = PBXGroup;
-			children = (
-				8830B291B597710D03B89984C9DBF530 /* .. */,
-			);
-			name = ..;
-			path = ..;
-			sourceTree = "<group>";
-		};
 		B61E32F2769354696ABA12C9A775EF86 /* ios */ = {
 			isa = PBXGroup;
 			children = (
@@ -1553,6 +1511,15 @@
 			);
 			name = ios;
 			path = ios;
+			sourceTree = "<group>";
+		};
+		B7B025953AC49D6B89D44C06CD00A429 /* plugins */ = {
+			isa = PBXGroup;
+			children = (
+				DB7F954060067C68E8EB7E723F58B76D /* integration_test */,
+			);
+			name = plugins;
+			path = plugins;
 			sourceTree = "<group>";
 		};
 		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
@@ -1616,15 +1583,6 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
-		CB74DAC3401AB86F948A748AF5BE4D83 /* integration_test */ = {
-			isa = PBXGroup;
-			children = (
-				EDCC11DEE046912D58C955C815417996 /* ios */,
-			);
-			name = integration_test;
-			path = integration_test;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
@@ -1635,15 +1593,6 @@
 				D7A438C7ECC74FA9ED457575BBCBAC11 /* Products */,
 				2DB8426A477BA92773F00012EBA84D53 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D27803466B4D14766F730736DC2E96A1 /* ios */ = {
-			isa = PBXGroup;
-			children = (
-				4B2EFD652C05508E523B3A17CB68DF4D /* .symlinks */,
-			);
-			name = ios;
-			path = ios;
 			sourceTree = "<group>";
 		};
 		D7A438C7ECC74FA9ED457575BBCBAC11 /* Products */ = {
@@ -1660,6 +1609,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		DB7F954060067C68E8EB7E723F58B76D /* integration_test */ = {
+			isa = PBXGroup;
+			children = (
+				0FCDBD2A88708106CF0A1393B4DF88E5 /* ios */,
+			);
+			name = integration_test;
+			path = integration_test;
+			sourceTree = "<group>";
+		};
 		DD861E4AEE8E947AAFEEE402C1853A95 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -1670,6 +1628,24 @@
 			);
 			name = Utils;
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		DF563384ED6882C57CF9396F57E6EB34 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				83800D59DACDEB2362F50DA6B5BE8102 /* .. */,
+			);
+			name = ..;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E1D031E37018C9DCC87160A17F180B19 /* .. */ = {
+			isa = PBXGroup;
+			children = (
+				A976687A686C564DFB11A0DA23F5817A /* .. */,
+			);
+			name = ..;
+			path = ../../../../../../../flutter/packages/integration_test/ios/integration_test/Sources;
 			sourceTree = "<group>";
 		};
 		E54DF1E35A178688962C42BC6DC922DD /* Support Files */ = {
@@ -1709,24 +1685,6 @@
 			path = "Target Support Files/Pods-Runner";
 			sourceTree = "<group>";
 		};
-		ED35F551AFA2EBEBCCDFDE7AAFD7473D /* .. */ = {
-			isa = PBXGroup;
-			children = (
-				51B378AC424904E33469045666920F45 /* .. */,
-			);
-			name = ..;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		EDCC11DEE046912D58C955C815417996 /* ios */ = {
-			isa = PBXGroup;
-			children = (
-				1BC96D60604C95686FDE6357F9D01409 /* integration_test */,
-			);
-			name = ios;
-			path = ios;
-			sourceTree = "<group>";
-		};
 		EFF5F82FF5DC2997F9D767511AC39FB4 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
@@ -1754,6 +1712,21 @@
 			);
 			name = Flutter;
 			path = ../Flutter;
+			sourceTree = "<group>";
+		};
+		F4CEB24E40282B79248AA4C948BBD89F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCFD98FD112F25FDEE04E9F62986B149 /* integration_test.modulemap */,
+				C4C653B6D84A09AAE389E3D85F9BB10E /* integration_test-dummy.m */,
+				3B8966D7413205B898AA0127D7694834 /* integration_test-Info.plist */,
+				7BA8EFC410259111CD07696B47D62CB8 /* integration_test-prefix.pch */,
+				D57EBBBC09A7503AAF9906A1FB3D4257 /* integration_test-umbrella.h */,
+				6E399DAD60D4A354E3091151831E60E5 /* integration_test.debug.xcconfig */,
+				537A7EDB4C11796AC5F6C68937036DA7 /* integration_test.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../../../Pods/Target Support Files/integration_test";
 			sourceTree = "<group>";
 		};
 		FD262FA5C98F509E282334685538A43F /* Resources */ = {
@@ -1949,10 +1922,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				627F5CEB55796E876CA64A9FD1856124 /* FLTIntegrationTestRunner.h in Headers */,
+				9572D5F85F03BD01E8D2140E3D039C31 /* FLTIntegrationTestRunner.h in Headers */,
 				D3161FF34F8E2B45AD80A7B9450BE18B /* integration_test-umbrella.h in Headers */,
-				88AB600DB79A927B6B30CEB52E19A18D /* IntegrationTestIosTest.h in Headers */,
-				F14AD9787FB9195463515332D9C471C9 /* IntegrationTestPlugin.h in Headers */,
+				2B366C50BD9AD3A8DDA32BAB4F8F3D1A /* IntegrationTestIosTest.h in Headers */,
+				6A75C5318FFD11A65720BAC4EF47F3DF /* IntegrationTestPlugin.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1977,11 +1950,11 @@
 /* Begin PBXNativeTarget section */
 		276021C4482165D46E0CBBEFB822FE95 /* CocoaLumberjack-CocoaLumberjackPrivacy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94E625F4A515DA317E9EAA39DB4E5E76 /* Build configuration list for PBXNativeTarget "CocoaLumberjack-CocoaLumberjackPrivacy" */;
+			buildConfigurationList = FE617956E63C80B3DCC58E1D99EC1EF0 /* Build configuration list for PBXNativeTarget "CocoaLumberjack-CocoaLumberjackPrivacy" */;
 			buildPhases = (
-				D52282D781245D745AA2836A0A29E76F /* Sources */,
-				1D03157AB3137967F7D2524936B186C8 /* Frameworks */,
-				7DD271AF9CED1FC97781209F555A6B1F /* Resources */,
+				B6F956C97197A8092238C44F9F79D7C9 /* Sources */,
+				EE493CB363266FE0124A11F1A65CBFBB /* Frameworks */,
+				D2FC381B7B15406BC3B3BF5804A32566 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -2004,7 +1977,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				60D3E2342FD420E06CCC8448F59E24A7 /* PBXTargetDependency */,
+				D44D014AB7F7B8C7B4BB396AC259E4BE /* PBXTargetDependency */,
 			);
 			name = "Pods-RunnerTests";
 			productName = Pods_RunnerTests;
@@ -2023,11 +1996,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				DB105D03276E3A81F3FBB28B8E86F40D /* PBXTargetDependency */,
-				2A0008E9EBCE5D9E325DDB0A4636BA95 /* PBXTargetDependency */,
-				CAF856686A7A8D61669288BEF6CA4FB0 /* PBXTargetDependency */,
-				AE8E8A39C346A8A12F317D13DDB9E7F0 /* PBXTargetDependency */,
-				7217BA94193F1FF1F4DBDFF84FF10CF8 /* PBXTargetDependency */,
+				96B1B7056726DB46606BB286E1AC99C6 /* PBXTargetDependency */,
+				E8A03167CA94E305156415604DEB116B /* PBXTargetDependency */,
+				D4ECE005387AAAD1029BCBB078AA524E /* PBXTargetDependency */,
+				97AA12D7A1FBA0A390A4D6C7E5ADAE93 /* PBXTargetDependency */,
+				E6A4B722EFDCF3B8027541665EF0C070 /* PBXTargetDependency */,
 			);
 			name = "Pods-Runner";
 			productName = Pods_Runner;
@@ -2046,7 +2019,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				75647B4DCD0DA8069E4E45F05F889F9F /* PBXTargetDependency */,
+				90A31ED27CF7E134DFECF3B6784874B6 /* PBXTargetDependency */,
 			);
 			name = integration_test;
 			productName = integration_test;
@@ -2065,7 +2038,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				D48516EF509D41645B06581935DFA977 /* PBXTargetDependency */,
+				09B7EF6E1D85652F672E1C04FD012BE2 /* PBXTargetDependency */,
 			);
 			name = SVGKit;
 			productName = SVGKit;
@@ -2084,7 +2057,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				83090D679400EE7DDC499E63C31D8A36 /* PBXTargetDependency */,
+				2C0415F3E0A01C63A5617D8B101FFCC1 /* PBXTargetDependency */,
 			);
 			name = CocoaLumberjack;
 			productName = CocoaLumberjack;
@@ -2103,8 +2076,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				9B50927C47E2A91293EA218E0E3E9F53 /* PBXTargetDependency */,
-				FB4B10FA1209FEB356D815AB4416D0B2 /* PBXTargetDependency */,
+				A12CD3888662DDA13ACEC8303F92CD2B /* PBXTargetDependency */,
+				ED65832242CC7F675E7AD73C3E74E846 /* PBXTargetDependency */,
 			);
 			name = cupertino_native_better;
 			productName = cupertino_native_better;
@@ -2162,14 +2135,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7DD271AF9CED1FC97781209F555A6B1F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				46DAB54CAD35FE69BB7F4A9C45A61AF4 /* PrivacyInfo.xcprivacy in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A83921B862034F84A665539C2F3A19EB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2189,6 +2154,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C178C36D499F145C16049B3F6616D3CE /* CocoaLumberjack-CocoaLumberjackPrivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2FC381B7B15406BC3B3BF5804A32566 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E75C2B3914EF9EF16E865B5CB25ABCEA /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2222,10 +2195,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77BE2DA86DF37BD6A8633BEBEE7898A1 /* FLTIntegrationTestRunner.m in Sources */,
+				00DBB1ED94A9010D50C6B2A1AD554882 /* FLTIntegrationTestRunner.m in Sources */,
 				8A655B581F2FFA1A700C0AA32E29941E /* integration_test-dummy.m in Sources */,
-				1537324C41E5AD6ADAF0FEBEFAEF18AD /* IntegrationTestIosTest.m in Sources */,
-				2A9967C72CCDF80FAB9021317A401AA7 /* IntegrationTestPlugin.m in Sources */,
+				424A3856870B75AF4575AE0D86F98A4D /* IntegrationTestIosTest.m in Sources */,
+				A29890D9FBB929DC034C2003F46819E5 /* IntegrationTestPlugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6F956C97197A8092238C44F9F79D7C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2364,13 +2344,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D52282D781245D745AA2836A0A29E76F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E687045D5562CB4FB469E88FEE2560DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2414,71 +2387,71 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2A0008E9EBCE5D9E325DDB0A4636BA95 /* PBXTargetDependency */ = {
+		09B7EF6E1D85652F672E1C04FD012BE2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Flutter;
-			target = 1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */;
-			targetProxy = 011CDDE69956B42FAE474311DBDC94B5 /* PBXContainerItemProxy */;
+			name = CocoaLumberjack;
+			target = E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */;
+			targetProxy = A03AF982D4BF8F98340890792023728C /* PBXContainerItemProxy */;
 		};
-		60D3E2342FD420E06CCC8448F59E24A7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-Runner";
-			target = 8B74B458B450D74B75744B87BD747314 /* Pods-Runner */;
-			targetProxy = 66476D6E2A358887803B7F3DC222B775 /* PBXContainerItemProxy */;
-		};
-		7217BA94193F1FF1F4DBDFF84FF10CF8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = integration_test;
-			target = ADE86197C9EC7D5D7AB212E24AE13395 /* integration_test */;
-			targetProxy = 3D5983F7CFFEA8D64702B0E5E9B1A8FA /* PBXContainerItemProxy */;
-		};
-		75647B4DCD0DA8069E4E45F05F889F9F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Flutter;
-			target = 1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */;
-			targetProxy = 834A6C1302FB3A4D3A67CB1B5AD0A96B /* PBXContainerItemProxy */;
-		};
-		83090D679400EE7DDC499E63C31D8A36 /* PBXTargetDependency */ = {
+		2C0415F3E0A01C63A5617D8B101FFCC1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "CocoaLumberjack-CocoaLumberjackPrivacy";
 			target = 276021C4482165D46E0CBBEFB822FE95 /* CocoaLumberjack-CocoaLumberjackPrivacy */;
-			targetProxy = D85A0B83B2B8A8B77DEF34F6493E3FAE /* PBXContainerItemProxy */;
+			targetProxy = C5F5D8E49EA64B225CBAEBCF3DCEA6F6 /* PBXContainerItemProxy */;
 		};
-		9B50927C47E2A91293EA218E0E3E9F53 /* PBXTargetDependency */ = {
+		90A31ED27CF7E134DFECF3B6784874B6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Flutter;
 			target = 1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */;
-			targetProxy = BCDFFBA2BE6E320148F16553772CF388 /* PBXContainerItemProxy */;
+			targetProxy = D6053E78F02DB9C80C34254DB08E05C5 /* PBXContainerItemProxy */;
 		};
-		AE8E8A39C346A8A12F317D13DDB9E7F0 /* PBXTargetDependency */ = {
+		96B1B7056726DB46606BB286E1AC99C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaLumberjack;
+			target = E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */;
+			targetProxy = 6F92E914108783973DA524E51A84DFD6 /* PBXContainerItemProxy */;
+		};
+		97AA12D7A1FBA0A390A4D6C7E5ADAE93 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = cupertino_native_better;
 			target = EDCE3843D7663ACDA3406FFAC4F448D2 /* cupertino_native_better */;
-			targetProxy = 2FEE196D0B6E6AD386D707DAAE0AFBF2 /* PBXContainerItemProxy */;
+			targetProxy = DEAFEED5358281D41FAFB331DD3A82FF /* PBXContainerItemProxy */;
 		};
-		CAF856686A7A8D61669288BEF6CA4FB0 /* PBXTargetDependency */ = {
+		A12CD3888662DDA13ACEC8303F92CD2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Flutter;
+			target = 1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */;
+			targetProxy = B0F7D74EE2A318A1C61BF5132EFE524F /* PBXContainerItemProxy */;
+		};
+		D44D014AB7F7B8C7B4BB396AC259E4BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Runner";
+			target = 8B74B458B450D74B75744B87BD747314 /* Pods-Runner */;
+			targetProxy = 5295589B640EDC2B4BAF840E1B80778A /* PBXContainerItemProxy */;
+		};
+		D4ECE005387AAAD1029BCBB078AA524E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SVGKit;
 			target = B537A1FD6BC67DF7FE8C2B34E5CE6F19 /* SVGKit */;
-			targetProxy = CF898FBD20CEA748B633F6345EE904F2 /* PBXContainerItemProxy */;
+			targetProxy = C480A93509BBEDDC93A4E4BA20FF5C89 /* PBXContainerItemProxy */;
 		};
-		D48516EF509D41645B06581935DFA977 /* PBXTargetDependency */ = {
+		E6A4B722EFDCF3B8027541665EF0C070 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = CocoaLumberjack;
-			target = E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */;
-			targetProxy = E95EE44EFE80B023468442622539D2BE /* PBXContainerItemProxy */;
+			name = integration_test;
+			target = ADE86197C9EC7D5D7AB212E24AE13395 /* integration_test */;
+			targetProxy = C0EC68EA3B30D9407FD38B006F608FE7 /* PBXContainerItemProxy */;
 		};
-		DB105D03276E3A81F3FBB28B8E86F40D /* PBXTargetDependency */ = {
+		E8A03167CA94E305156415604DEB116B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = CocoaLumberjack;
-			target = E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */;
-			targetProxy = 8B42BD8CFF260E3391351229F8795652 /* PBXContainerItemProxy */;
+			name = Flutter;
+			target = 1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */;
+			targetProxy = 96C6F9CFFAA6EF0F44232E30828F762F /* PBXContainerItemProxy */;
 		};
-		FB4B10FA1209FEB356D815AB4416D0B2 /* PBXTargetDependency */ = {
+		ED65832242CC7F675E7AD73C3E74E846 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SVGKit;
 			target = B537A1FD6BC67DF7FE8C2B34E5CE6F19 /* SVGKit */;
-			targetProxy = D798FBD6CB48173E88AE64D7CDBD0131 /* PBXContainerItemProxy */;
+			targetProxy = 23D7EF7CE0319BBD181C75B0357CC28E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2525,7 +2498,7 @@
 		};
 		1DF60998696FCBBD5D586032EB312CC6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1CCCCEFA81DD7E8841220805936928AC /* integration_test.release.xcconfig */;
+			baseConfigurationReference = 537A7EDB4C11796AC5F6C68937036DA7 /* integration_test.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
@@ -2542,11 +2515,11 @@
 				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "$(inherited) armv7";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) i386";
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
-					"\"/Users/mac/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64\"",
+					"\"/Users/emirgunumdogdu/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64\"",
 					"$(inherited)",
 				);
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
-					"\"/Users/mac/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
+					"\"/Users/emirgunumdogdu/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
 					"$(inherited)",
 				);
 				GCC_PREFIX_HEADER = "Target Support Files/integration_test/integration_test-prefix.pch";
@@ -2598,11 +2571,11 @@
 				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "$(inherited) armv7";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) i386";
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
-					"\"/Users/mac/development/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-arm64\"",
+					"\"/Users/emirgunumdogdu/development/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-arm64\"",
 					"$(inherited)",
 				);
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
-					"\"/Users/mac/development/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
+					"\"/Users/emirgunumdogdu/development/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
 					"$(inherited)",
 				);
 				GCC_PREFIX_HEADER = "Target Support Files/cupertino_native_better/cupertino_native_better-prefix.pch";
@@ -2675,9 +2648,30 @@
 			};
 			name = Release;
 		};
+		378C75C22F113F600DEB2F4EB47C4DE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 748C3BF6D24E8B8BEB55264F6214F981 /* CocoaLumberjack.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_IDENTITY = "-";
+				CODE_SIGNING_REQUIRED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CocoaLumberjack";
+				EXPANDED_CODE_SIGN_IDENTITY = "-";
+				IBSC_MODULE = CocoaLumberjack;
+				INFOPLIST_FILE = "Target Support Files/CocoaLumberjack/ResourceBundle-CocoaLumberjackPrivacy-CocoaLumberjack-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = CocoaLumberjackPrivacy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		386AC04547EE6FE3A4080B5C256377EE /* Profile */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1CCCCEFA81DD7E8841220805936928AC /* integration_test.release.xcconfig */;
+			baseConfigurationReference = 537A7EDB4C11796AC5F6C68937036DA7 /* integration_test.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
@@ -2694,11 +2688,11 @@
 				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "$(inherited) armv7";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) i386";
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
-					"\"/Users/mac/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64\"",
+					"\"/Users/emirgunumdogdu/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64\"",
 					"$(inherited)",
 				);
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
-					"\"/Users/mac/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
+					"\"/Users/emirgunumdogdu/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
 					"$(inherited)",
 				);
 				GCC_PREFIX_HEADER = "Target Support Files/integration_test/integration_test-prefix.pch";
@@ -2770,28 +2764,6 @@
 			};
 			name = Debug;
 		};
-		462D3FD396D93AA2278C7B84F38B08CB /* Profile */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C6D8E10DD448D9AE9A92C40416856B1 /* CocoaLumberjack.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_IDENTITY = "-";
-				CODE_SIGNING_REQUIRED = NO;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CocoaLumberjack";
-				EXPANDED_CODE_SIGN_IDENTITY = "-";
-				IBSC_MODULE = CocoaLumberjack;
-				INFOPLIST_FILE = "Target Support Files/CocoaLumberjack/ResourceBundle-CocoaLumberjackPrivacy-CocoaLumberjack-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = CocoaLumberjackPrivacy;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Profile;
-		};
 		4A69EBB4814C2F2701AAFAF3CDAF5384 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 03E8AD2E8B75443E12D3D3BD12A9900E /* Pods-RunnerTests.debug.xcconfig */;
@@ -2813,11 +2785,11 @@
 				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "$(inherited) armv7";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) i386";
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
-					"\"/Users/mac/development/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-arm64\"",
+					"\"/Users/emirgunumdogdu/development/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-arm64\"",
 					"$(inherited)",
 				);
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
-					"\"/Users/mac/development/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
+					"\"/Users/emirgunumdogdu/development/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Target Support Files/Pods-RunnerTests/Pods-RunnerTests-Info.plist";
@@ -2936,11 +2908,11 @@
 				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "$(inherited) armv7";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) i386";
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
-					"\"/Users/mac/development/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-arm64\"",
+					"\"/Users/emirgunumdogdu/development/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-arm64\"",
 					"$(inherited)",
 				);
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
-					"\"/Users/mac/development/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
+					"\"/Users/emirgunumdogdu/development/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Target Support Files/Pods-Runner/Pods-Runner-Info.plist";
@@ -2993,11 +2965,11 @@
 				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "$(inherited) armv7";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) i386";
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
-					"\"/Users/mac/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64\"",
+					"\"/Users/emirgunumdogdu/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64\"",
 					"$(inherited)",
 				);
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
-					"\"/Users/mac/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
+					"\"/Users/emirgunumdogdu/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Target Support Files/Pods-RunnerTests/Pods-RunnerTests-Info.plist";
@@ -3029,27 +3001,6 @@
 			};
 			name = Release;
 		};
-		5C16994011DDF233269CFC2D855FD975 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 748C3BF6D24E8B8BEB55264F6214F981 /* CocoaLumberjack.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_IDENTITY = "-";
-				CODE_SIGNING_REQUIRED = NO;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CocoaLumberjack";
-				EXPANDED_CODE_SIGN_IDENTITY = "-";
-				IBSC_MODULE = CocoaLumberjack;
-				INFOPLIST_FILE = "Target Support Files/CocoaLumberjack/ResourceBundle-CocoaLumberjackPrivacy-CocoaLumberjack-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_NAME = CocoaLumberjackPrivacy;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		66AB2934750D40AD8076557987F1C242 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7B5303BECA2A6142C6A99B312C486D6D /* Flutter.debug.xcconfig */;
@@ -3068,6 +3019,26 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
+		};
+		69388B192496D345BD3AAC60DF1D74C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C6D8E10DD448D9AE9A92C40416856B1 /* CocoaLumberjack.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_IDENTITY = "-";
+				CODE_SIGNING_REQUIRED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CocoaLumberjack";
+				EXPANDED_CODE_SIGN_IDENTITY = "-";
+				IBSC_MODULE = CocoaLumberjack;
+				INFOPLIST_FILE = "Target Support Files/CocoaLumberjack/ResourceBundle-CocoaLumberjackPrivacy-CocoaLumberjack-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = CocoaLumberjackPrivacy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
 		};
 		808E06A27528509B086BB928A2D674DC /* Profile */ = {
 			isa = XCBuildConfiguration;
@@ -3088,11 +3059,11 @@
 				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "$(inherited) armv7";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) i386";
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
-					"\"/Users/mac/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64\"",
+					"\"/Users/emirgunumdogdu/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64\"",
 					"$(inherited)",
 				);
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
-					"\"/Users/mac/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
+					"\"/Users/emirgunumdogdu/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
 					"$(inherited)",
 				);
 				GCC_PREFIX_HEADER = "Target Support Files/cupertino_native_better/cupertino_native_better-prefix.pch";
@@ -3147,11 +3118,11 @@
 				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "$(inherited) armv7";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) i386";
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
-					"\"/Users/mac/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64\"",
+					"\"/Users/emirgunumdogdu/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64\"",
 					"$(inherited)",
 				);
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
-					"\"/Users/mac/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
+					"\"/Users/emirgunumdogdu/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Target Support Files/Pods-RunnerTests/Pods-RunnerTests-Info.plist";
@@ -3202,11 +3173,11 @@
 				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "$(inherited) armv7";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) i386";
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
-					"\"/Users/mac/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64\"",
+					"\"/Users/emirgunumdogdu/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64\"",
 					"$(inherited)",
 				);
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
-					"\"/Users/mac/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
+					"\"/Users/emirgunumdogdu/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
 					"$(inherited)",
 				);
 				GCC_PREFIX_HEADER = "Target Support Files/cupertino_native_better/cupertino_native_better-prefix.pch";
@@ -3323,11 +3294,11 @@
 				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "$(inherited) armv7";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) i386";
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
-					"\"/Users/mac/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64\"",
+					"\"/Users/emirgunumdogdu/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64\"",
 					"$(inherited)",
 				);
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
-					"\"/Users/mac/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
+					"\"/Users/emirgunumdogdu/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Target Support Files/Pods-Runner/Pods-Runner-Info.plist";
@@ -3463,7 +3434,7 @@
 		};
 		B19F338034A241F06CE78582A345D8C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 738E1CB2F391C84D5B7AECC22780FA49 /* integration_test.debug.xcconfig */;
+			baseConfigurationReference = 6E399DAD60D4A354E3091151831E60E5 /* integration_test.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
@@ -3480,11 +3451,11 @@
 				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "$(inherited) armv7";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) i386";
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
-					"\"/Users/mac/development/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-arm64\"",
+					"\"/Users/emirgunumdogdu/development/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-arm64\"",
 					"$(inherited)",
 				);
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
-					"\"/Users/mac/development/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
+					"\"/Users/emirgunumdogdu/development/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
 					"$(inherited)",
 				);
 				GCC_PREFIX_HEADER = "Target Support Files/integration_test/integration_test-prefix.pch";
@@ -3535,6 +3506,28 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		BF3C1FF698DBC1F192AE0FAD10CECCDC /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C6D8E10DD448D9AE9A92C40416856B1 /* CocoaLumberjack.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_IDENTITY = "-";
+				CODE_SIGNING_REQUIRED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CocoaLumberjack";
+				EXPANDED_CODE_SIGN_IDENTITY = "-";
+				IBSC_MODULE = CocoaLumberjack;
+				INFOPLIST_FILE = "Target Support Files/CocoaLumberjack/ResourceBundle-CocoaLumberjackPrivacy-CocoaLumberjack-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = CocoaLumberjackPrivacy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Profile;
 		};
 		CB8D7B192C027C078C035C78BF37DDA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -3636,11 +3629,11 @@
 				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "$(inherited) armv7";
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "$(inherited) i386";
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]" = (
-					"\"/Users/mac/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64\"",
+					"\"/Users/emirgunumdogdu/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64\"",
 					"$(inherited)",
 				);
 				"FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]" = (
-					"\"/Users/mac/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
+					"\"/Users/emirgunumdogdu/development/flutter/bin/cache/artifacts/engine/ios-release/Flutter.xcframework/ios-arm64_x86_64-simulator\"",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Target Support Files/Pods-Runner/Pods-Runner-Info.plist";
@@ -3691,26 +3684,6 @@
 			};
 			name = Profile;
 		};
-		EE112788E88929D8ED617ECA32859E03 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C6D8E10DD448D9AE9A92C40416856B1 /* CocoaLumberjack.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_IDENTITY = "-";
-				CODE_SIGNING_REQUIRED = NO;
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CocoaLumberjack";
-				EXPANDED_CODE_SIGN_IDENTITY = "-";
-				IBSC_MODULE = CocoaLumberjack;
-				INFOPLIST_FILE = "Target Support Files/CocoaLumberjack/ResourceBundle-CocoaLumberjackPrivacy-CocoaLumberjack-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = CocoaLumberjackPrivacy;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -3740,16 +3713,6 @@
 				66AB2934750D40AD8076557987F1C242 /* Debug */,
 				ECADC3DA3CA35C50136F729EA9ECE827 /* Profile */,
 				B90F9ECA1CF6F4B009B3F630F29E5FEC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		94E625F4A515DA317E9EAA39DB4E5E76 /* Build configuration list for PBXNativeTarget "CocoaLumberjack-CocoaLumberjackPrivacy" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5C16994011DDF233269CFC2D855FD975 /* Debug */,
-				462D3FD396D93AA2278C7B84F38B08CB /* Profile */,
-				EE112788E88929D8ED617ECA32859E03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3790,6 +3753,16 @@
 				CB8D7B192C027C078C035C78BF37DDA5 /* Debug */,
 				953A3FA2B41357A02D732F33F72FEB08 /* Profile */,
 				164005D63EB39C9E0F28B1E0698A780F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE617956E63C80B3DCC58E1D99EC1EF0 /* Build configuration list for PBXNativeTarget "CocoaLumberjack-CocoaLumberjackPrivacy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				378C75C22F113F600DEB2F4EB47C4DE3 /* Debug */,
+				BF3C1FF698DBC1F192AE0FAD10CECCDC /* Profile */,
+				69388B192496D345BD3AAC60DF1D74C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
