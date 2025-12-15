@@ -569,44 +569,7 @@ class _CNTabBarState extends State<CNTabBar> {
       content = SizedBox(height: h, child: platformView);
     }
 
-    return ClipRect(
-      child: Stack(
-        children: [
-          content,
-          Positioned.fill(
-            child: LayoutBuilder(
-              builder: (context, constraints) {
-                // Determine the width references for calculation
-                final effectiveWidth = w ?? constraints.maxWidth;
-
-                return GestureDetector(
-                  behavior: HitTestBehavior.translucent,
-                  onTapUp: (details) {
-                    if (widget.items.isEmpty) return;
-
-                    // Simple equal distribution calculation
-                    // If split is enabled, this logic might need refinement if there's a gap,
-                    // but for now assuming items effectively partition the space or user taps on the icon area.
-
-                    // For split view (search), layout is more complex, but user issue is likely for standard usage.
-                    // If split is true, the native view handles void spaces.
-                    // Tap detection here is a best-effort "fix" for unresponsive tabs.
-
-                    final itemWidth = effectiveWidth / widget.items.length;
-                    final index =
-                        (details.localPosition.dx / itemWidth).floor();
-
-                    if (index >= 0 && index < widget.items.length) {
-                      widget.onTap(index);
-                    }
-                  },
-                );
-              },
-            ),
-          ),
-        ],
-      ),
-    );
+    return content;
   }
 
   void _onCreated(int id) {
