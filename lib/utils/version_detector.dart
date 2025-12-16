@@ -98,16 +98,22 @@ class PlatformVersion {
   /// Returns false if not iOS or version detection failed.
   ///
   /// Note: Returns false if not initialized (safe fallback).
+  /// Checks if the current iOS version is 16 or later.
+  ///
+  /// Returns false if not iOS or version detection failed.
+  ///
+  /// Note: Returns false if not initialized (safe fallback).
   static bool get isIOS26OrLater {
     if (!Platform.isIOS) return false;
     if (!_isInitialized) {
       // Silent fallback - initialization should happen in main()
       return false;
     }
-    return (_cachedIOSVersion ?? 0) >= 26;
+    // CHANGED: Lowered from 26 to 16 to support modern devices with polyfill
+    return (_cachedIOSVersion ?? 0) >= 16;
   }
 
-  /// Checks if the current macOS version is 26 or later.
+  /// Checks if the current macOS version is 13 or later.
   ///
   /// Returns false if not macOS or version detection failed.
   ///
@@ -118,12 +124,13 @@ class PlatformVersion {
       // Silent fallback - initialization should happen in main()
       return false;
     }
-    return (_cachedMacOSVersion ?? 0) >= 26;
+    // CHANGED: Lowered from 26 to 13 (Ventura)
+    return (_cachedMacOSVersion ?? 0) >= 13;
   }
 
   /// Checks if Liquid Glass effects should use native platform views.
   ///
-  /// Returns true only for iOS 26+ or macOS 26+.
+  /// Returns true only for iOS 16+ or macOS 13+.
   ///
   /// This will auto-initialize if not already initialized.
   static bool get shouldUseNativeGlass {

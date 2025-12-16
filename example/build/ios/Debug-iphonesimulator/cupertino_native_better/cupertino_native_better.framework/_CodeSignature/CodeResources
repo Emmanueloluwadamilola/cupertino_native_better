@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/cupertino_native_better-Swift.h</key>
 		<data>
-		8iR30VRBE21J46X5QWOG/No35eo=
+		0+5TUkrUBZbZgy2Qvi7/pHmph8U=
 		</data>
 		<key>Headers/cupertino_native_better-umbrella.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/cupertino_native_better.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		ae2ExVE/5/KAnV2CVZq21ZiMyCQ=
+		jrLfxokIoxHWGAx7QT7//a/Rx74=
 		</data>
 		<key>Modules/cupertino_native_better.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		Tx2Kbzj1cKXOqUweAec+icXbldU=
+		uKqVrNTlOtoHicF7ZipqLsfpAXc=
 		</data>
 		<key>Modules/cupertino_native_better.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/cupertino_native_better.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		uaJT8ZfOJmmrZUD3e/OCtyh81As=
+		AuItyT9eh9Z5AGgtNUKUKlgE/64=
 		</data>
 		<key>Modules/cupertino_native_better.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		CP974Sdu9lMmx+OnOGUuIlCb0gM=
+		+C2UBkWB9DGfhsk3gUvBwm1wLf8=
 		</data>
 		<key>Modules/cupertino_native_better.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/cupertino_native_better.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		pFMwgYDUP8a/b/39a6pRQilwHJc=
+		MZAtwjDmwhQU/DKomjtTE0DKfXI=
 		</data>
 		<key>Modules/cupertino_native_better.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		srNz/3mnMQ5GKMxk+vNiloZMQ7E=
+		c0vwN8FMmu7Y0I8NIrJ7A3kgRHU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -59,7 +59,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vut0DCkLjRN5NhmFLEsCdPaqKZENddTlQ8WAeF2zFEg=
+			oP1dlfzKkvLtbmwtcjuW580bzwoMr4JO7FLjHuWFmgI=
 			</data>
 		</dict>
 		<key>Headers/cupertino_native_better-umbrella.h</key>
@@ -73,14 +73,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3CyeYm+q6JyIkJNpJZnb+A5Xe9onpfri4ODP/aXeg00=
+			chQXXbV1kZx41uLJu+RP1tEZhNsg2g2WrGp8Em/yRk0=
 			</data>
 		</dict>
 		<key>Modules/cupertino_native_better.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hlOr2eXdnB2QzPdEY9sTET5zG7pS0llK0hhHGlS+GtI=
+			iiVc0kgKMnY+zvo+E7C7MyOKCjxHik/9Kha3sGUyik8=
 			</data>
 		</dict>
 		<key>Modules/cupertino_native_better.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -94,14 +94,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3y8KIjeFSauI81a5RXKP03E2RSdAdsQKn7cEKplOvno=
+			oRUuESg113cUZ9bHt+nmPIHeLA3w5P+eMueizuh8GoM=
 			</data>
 		</dict>
 		<key>Modules/cupertino_native_better.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4Xhk49a6YmdJ0VSImUltRun/B6yR7jST4w04jz+7BFU=
+			MP5XxQrgNe2E2reHQFa25Io/Exj2btyRreTK8c/rN9g=
 			</data>
 		</dict>
 		<key>Modules/cupertino_native_better.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -115,14 +115,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PES9oUaHWlY8GlrL/kLJWIFXo8kwOVtXM019Z9FOC/c=
+			meHL43tn4fayNrQTTZadx6wcboK8uojLBSqeI7quENA=
 			</data>
 		</dict>
 		<key>Modules/cupertino_native_better.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IwqQPBSkSQ5FW5RGAbVzqJDouRuS3NsnotyOYG+Flpw=
+			Fi6dXThZA19huF9MY9+v0fbfnVcDIl8A6O5b6Wp2UMI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

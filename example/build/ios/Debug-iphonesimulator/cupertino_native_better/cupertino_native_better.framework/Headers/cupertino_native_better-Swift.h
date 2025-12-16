@@ -284,6 +284,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreFoundation;
 @import Flutter;
 @import ObjectiveC;
+@import UIKit;
 #endif
 
 #endif
@@ -305,6 +306,20 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+
+@class UITabBarController;
+@class UIViewController;
+@class UISearchController;
+@class UISearchBar;
+SWIFT_CLASS("_TtC23cupertino_native_better24CNNativeTabBarController") SWIFT_AVAILABILITY(ios,introduced=13.0) SWIFT_AVAILABILITY(ios,introduced=13.0)
+@interface CNNativeTabBarController : NSObject <UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating, UITabBarControllerDelegate>
+- (void)tabBarController:(UITabBarController * _Nonnull)tabBarController didSelectViewController:(UIViewController * _Nonnull)viewController;
+- (void)updateSearchResultsForSearchController:(UISearchController * _Nonnull)searchController;
+- (void)didPresentSearchController:(UISearchController * _Nonnull)searchController;
+- (void)didDismissSearchController:(UISearchController * _Nonnull)searchController;
+- (void)searchBarSearchButtonClicked:(UISearchBar * _Nonnull)searchBar;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 @protocol FlutterMessageCodec;
 @protocol NSObject;
@@ -644,6 +659,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreFoundation;
 @import Flutter;
 @import ObjectiveC;
+@import UIKit;
 #endif
 
 #endif
@@ -665,6 +681,20 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+
+@class UITabBarController;
+@class UIViewController;
+@class UISearchController;
+@class UISearchBar;
+SWIFT_CLASS("_TtC23cupertino_native_better24CNNativeTabBarController") SWIFT_AVAILABILITY(ios,introduced=13.0) SWIFT_AVAILABILITY(ios,introduced=13.0)
+@interface CNNativeTabBarController : NSObject <UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating, UITabBarControllerDelegate>
+- (void)tabBarController:(UITabBarController * _Nonnull)tabBarController didSelectViewController:(UIViewController * _Nonnull)viewController;
+- (void)updateSearchResultsForSearchController:(UISearchController * _Nonnull)searchController;
+- (void)didPresentSearchController:(UISearchController * _Nonnull)searchController;
+- (void)didDismissSearchController:(UISearchController * _Nonnull)searchController;
+- (void)searchBarSearchButtonClicked:(UISearchBar * _Nonnull)searchBar;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 @protocol FlutterMessageCodec;
 @protocol NSObject;
