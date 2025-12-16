@@ -199,7 +199,7 @@ struct FloatingIslandSwiftUI: View {
             // Native glass effect on iOS 26+
             RoundedRectangle(cornerRadius: cornerRadius)
                 .fill(.clear)
-                .glassEffect(.regular, in: .rect(cornerRadius: cornerRadius))
+                .glassEffect(Glass.regular, in: RoundedRectangle(cornerRadius: cornerRadius))
                 .contentShape(RoundedRectangle(cornerRadius: cornerRadius))
                 .onTapGesture {
                     withAnimation(.spring(response: viewModel.springResponse, dampingFraction: viewModel.springDamping)) {

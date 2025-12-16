@@ -1,6 +1,8 @@
+import 'dart:typed_data';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter/widgets.dart';
 
 import '../channel/params.dart';
 import '../style/sf_symbol.dart';
@@ -593,8 +595,8 @@ class _CNTabBarState extends State<CNTabBar> {
                     // Tap detection here is a best-effort "fix" for unresponsive tabs.
 
                     final itemWidth = effectiveWidth / widget.items.length;
-                    final index =
-                        (details.localPosition.dx / itemWidth).floor();
+                    final index = (details.localPosition.dx / itemWidth)
+                        .floor();
 
                     if (index >= 0 && index < widget.items.length) {
                       widget.onTap(index);

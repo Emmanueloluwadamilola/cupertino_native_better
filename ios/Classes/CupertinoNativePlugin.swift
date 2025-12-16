@@ -40,9 +40,9 @@ public class CupertinoNativePlugin: NSObject, FlutterPlugin {
     let searchBarFactory = CupertinoSearchBarFactory(messenger: registrar.messenger())
     registrar.register(searchBarFactory, withId: "CNSearchBar")
 
-    // Navigation Bar
-    let navigationBarFactory = CupertinoNavigationBarFactory(messenger: registrar.messenger())
-    registrar.register(navigationBarFactory, withId: "CupertinoNativeNavigationBar")
+    // Navigation Bar - Unimplemented
+    // let navigationBarFactory = CupertinoNavigationBarFactory(messenger: registrar.messenger())
+    // registrar.register(navigationBarFactory, withId: "CupertinoNativeNavigationBar")
 
     // Floating island (Dynamic Island style)
     let floatingIslandFactory = FloatingIslandFactory(messenger: registrar.messenger())
@@ -52,7 +52,8 @@ public class CupertinoNativePlugin: NSObject, FlutterPlugin {
     let nativeTabBarChannel = FlutterMethodChannel(name: "cn_native_tab_bar", binaryMessenger: registrar.messenger())
     let nativeTabBarController = CNNativeTabBarController.shared
     nativeTabBarController.setChannel(nativeTabBarChannel)
-    registrar.addMethodCallDelegate(nativeTabBarController, channel: nativeTabBarChannel)
+    nativeTabBarController.setChannel(nativeTabBarChannel)
+    // Delegate is set within setChannel via setMethodCallHandler
   }
 
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {

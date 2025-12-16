@@ -300,7 +300,7 @@ struct CNSearchBarSwiftUI: View {
         if #available(iOS 26.0, *) {
             // Use native glass effect on iOS 26+
             Color.clear
-                .glassEffect(.regular, in: .capsule)
+                .glassEffect(Glass.regular, in: Capsule())
         } else {
             // Fallback to blur effect
             if let bg = backgroundColor {

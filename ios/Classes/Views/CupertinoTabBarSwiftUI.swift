@@ -7,7 +7,7 @@ struct TabBarItem: Identifiable, Equatable {
     let label: String?
     let symbol: String?
     let activeSymbol: String?
-    let badge: String?
+    var badge: String?
     let customIconData: Data?
     let activeCustomIconData: Data?
     let imageAssetPath: String?

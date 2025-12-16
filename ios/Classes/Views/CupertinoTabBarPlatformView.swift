@@ -1,4 +1,4 @@
-```swift
+
 import Flutter
 import UIKit
 import SVGKit

@@ -57,6 +57,7 @@ export 'components/icon.dart';
 export 'components/slider.dart';
 export 'components/switch.dart';
 export 'components/tab_bar.dart';
+export 'components/cn_tab_bar_native.dart';
 export 'components/popup_menu_button.dart';
 export 'components/popup_gesture.dart';
 export 'components/segmented_control.dart';

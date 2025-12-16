@@ -2,7 +2,8 @@ import Flutter
 import UIKit
 
 @available(iOS 13.0, *)
-public class CNNativeTabBarController: NSObject, FlutterMethodCallDelegate, UITabBarControllerDelegate, UISearchControllerDelegate, UISearchResultsUpdating, UISearchBarDelegate {
+@available(iOS 13.0, *)
+public class CNNativeTabBarController: NSObject, UITabBarControllerDelegate, UISearchControllerDelegate, UISearchResultsUpdating, UISearchBarDelegate {
     
     static let shared = CNNativeTabBarController()
     
@@ -86,6 +87,9 @@ public class CNNativeTabBarController: NSObject, FlutterMethodCallDelegate, UITa
     
     public func setChannel(_ channel: FlutterMethodChannel) {
         self.channel = channel
+        channel.setMethodCallHandler { [weak self] (call, result) in
+            self?.handle(call, result: result)
+        }
     }
     
     public func enable(tabs: [[String: Any]], selectedIndex: Int, config: [String: Any]) {
