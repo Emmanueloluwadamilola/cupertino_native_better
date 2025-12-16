@@ -1074,6 +1074,7 @@ class _CNTabBarState extends State<CNTabBar> {
                       style.searchBarPlaceholderColor ??
                       CupertinoColors.secondaryLabel,
                 ),
+                
                 style: TextStyle(
                   color: style.searchBarTextColor ?? CupertinoColors.label,
                 ),
