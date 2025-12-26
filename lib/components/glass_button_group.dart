@@ -370,6 +370,7 @@ class _CNGlassButtonGroupState extends State<CNGlassButtonGroup> {
           onPressed: button.onPressed,
           enabled: button.enabled,
           tint: button.tint,
+          badgeCount: button.badgeCount,
           config: CNButtonConfig(
             width: button.config.width,
             style: button.config.style,
@@ -420,6 +421,7 @@ class _CNGlassButtonGroupState extends State<CNGlassButtonGroup> {
           onPressed: data.onPressed,
           enabled: data.enabled,
           tint: data.tint,
+          badgeCount: data.badgeCount,
           config: CNButtonConfig(
             width: data.config.width,
             style: data.config.style,
@@ -512,6 +514,7 @@ class _CNGlassButtonGroupState extends State<CNGlassButtonGroup> {
         'assetPath': resolvedAssetPath ?? button.imageAsset!.assetPath,
       'enabled': button.enabled,
       if (tintArgb != null) 'tint': tintArgb,
+      if (button.badgeCount != null) 'badgeCount': button.badgeCount,
       'minHeight': button.config.minHeight ?? 44.0,
       'style': button.config.style.name,
       if (button.config.glassEffectUnionId != null)
@@ -592,6 +595,7 @@ class _CNGlassButtonGroupState extends State<CNGlassButtonGroup> {
         'assetPath': resolvedAssetPath ?? button.imageAsset!.assetPath,
       'enabled': button.enabled,
       if (tintArgb != null) 'tint': tintArgb,
+      if (button.badgeCount != null) 'badgeCount': button.badgeCount,
       'minHeight': button.config.minHeight ?? 44.0,
       'style': button.config.style.name,
       if (button.config.glassEffectUnionId != null)
@@ -638,6 +642,7 @@ class _ButtonSnapshot {
   final String style;
   final bool enabled;
   final int? tint;
+  final int? badgeCount;
 
   _ButtonSnapshot({
     this.label,
@@ -652,6 +657,7 @@ class _ButtonSnapshot {
     required this.style,
     required this.enabled,
     this.tint,
+    this.badgeCount,
   });
 
   factory _ButtonSnapshot.fromButtonWidget(CNButton button) {
@@ -668,6 +674,7 @@ class _ButtonSnapshot {
       style: button.config.style.name,
       enabled: button.enabled,
       tint: button.tint?.toARGB32(),
+      badgeCount: button.badgeCount,
     );
   }
 
@@ -685,6 +692,7 @@ class _ButtonSnapshot {
       style: button.config.style.name,
       enabled: button.enabled,
       tint: button.tint?.toARGB32(),
+      badgeCount: button.badgeCount,
     );
   }
 
@@ -700,6 +708,7 @@ class _ButtonSnapshot {
         customIconHash == other.customIconHash &&
         style == other.style &&
         enabled == other.enabled &&
-        tint == other.tint;
+        tint == other.tint &&
+        badgeCount == other.badgeCount;
   }
 }

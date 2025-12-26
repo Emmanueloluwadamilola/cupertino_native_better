@@ -36,7 +36,8 @@ class CNButtonData {
     this.enabled = true,
     this.tint,
     this.config = const CNButtonDataConfig(),
-  }) : isIcon = false;
+  }) : badgeCount = null,
+       isIcon = false;
 
   /// Creates an icon-only button data model.
   const CNButtonData.icon({
@@ -46,6 +47,7 @@ class CNButtonData {
     this.onPressed,
     this.enabled = true,
     this.tint,
+    this.badgeCount,
     this.config = const CNButtonDataConfig(),
   }) : label = null,
        isIcon = true;
@@ -74,6 +76,10 @@ class CNButtonData {
   /// Configuration for the button appearance.
   final CNButtonDataConfig config;
 
+  /// Optional badge count to display on icon buttons.
+  /// Displayed as "99+" for counts > 99. Only applies to icon-only buttons.
+  final int? badgeCount;
+
   /// Whether this is an icon-only button.
   final bool isIcon;
 
@@ -86,6 +92,7 @@ class CNButtonData {
     VoidCallback? onPressed,
     bool? enabled,
     Color? tint,
+    int? badgeCount,
     CNButtonDataConfig? config,
   }) {
     if (isIcon) {
@@ -96,6 +103,7 @@ class CNButtonData {
         onPressed: onPressed ?? this.onPressed,
         enabled: enabled ?? this.enabled,
         tint: tint ?? this.tint,
+        badgeCount: badgeCount ?? this.badgeCount,
         config: config ?? this.config,
       );
     }
