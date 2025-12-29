@@ -25,92 +25,166 @@ struct GlassButtonGroupSwiftUI: View {
   @Namespace private var namespace
 
   var body: some View {
-    GlassEffectContainer(spacing: viewModel.spacingForGlass) {
-      if viewModel.axis == .horizontal {
-        HStack(alignment: .center, spacing: viewModel.spacing) {
-          ForEach(Array(viewModel.buttons.enumerated()), id: \.offset) { index, button in
-            GlassButtonSwiftUI(
-              title: button.title,
-              iconName: button.iconName,
-              iconImage: button.iconImage,
-              iconSize: button.iconSize,
-              iconColor: button.iconColor,
-              tint: button.tint,
-              isRound: button.isRound,
-              style: button.style,
-              isEnabled: button.isEnabled,
-              onPressed: button.onPressed,
-              glassEffectUnionId: button.glassEffectUnionId,
-              glassEffectId: button.glassEffectId,
-              glassEffectInteractive: button.glassEffectInteractive,
-              namespace: namespace,
-              config: button.config,
-              badgeCount: nil // Don't show badge inside button
-            )
-            .overlay(alignment: .topTrailing) {
-              if let count = button.badgeCount, count > 0 {
-                BadgeView(count: count)
-              }
-            }
-            .allowsHitTesting(true) // Ensure button remains tappable
-          }
+    GeometryReader { geometry in
+      ZStack {
+        // Glass effect container with buttons (no badges)
+        GlassEffectContainer(spacing: viewModel.spacingForGlass) {
+          buttonStack(showBadges: false)
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
-      } else {
-        VStack(alignment: .center, spacing: viewModel.spacing) {
-          ForEach(Array(viewModel.buttons.enumerated()), id: \.offset) { index, button in
-            GlassButtonSwiftUI(
-              title: button.title,
-              iconName: button.iconName,
-              iconImage: button.iconImage,
-              iconSize: button.iconSize,
-              iconColor: button.iconColor,
-              tint: button.tint,
-              isRound: button.isRound,
-              style: button.style,
-              isEnabled: button.isEnabled,
-              onPressed: button.onPressed,
-              glassEffectUnionId: button.glassEffectUnionId,
-              glassEffectId: button.glassEffectId,
-              glassEffectInteractive: button.glassEffectInteractive,
-              namespace: namespace,
-              config: button.config,
-              badgeCount: nil // Don't show badge inside button
-            )
-            .overlay(alignment: .topTrailing) {
-              if let count = button.badgeCount, count > 0 {
-                BadgeView(count: count)
-              }
-            }
-            .allowsHitTesting(true) // Ensure button remains tappable
-          }
-        }
-        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
+
+        // Badge overlay layer (outside glass container)
+        badgeOverlay()
+          .frame(width: geometry.size.width, height: geometry.size.height)
+          .allowsHitTesting(false)
       }
     }
     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
     .ignoresSafeArea()
   }
+
+  @ViewBuilder
+  private func buttonStack(showBadges: Bool) -> some View {
+    if viewModel.axis == .horizontal {
+      HStack(alignment: .center, spacing: viewModel.spacing) {
+        ForEach(Array(viewModel.buttons.enumerated()), id: \.offset) { index, button in
+          GlassButtonSwiftUI(
+            title: button.title,
+            iconName: button.iconName,
+            iconImage: button.iconImage,
+            iconSize: button.iconSize,
+            iconColor: button.iconColor,
+            tint: button.tint,
+            isRound: button.isRound,
+            style: button.style,
+            isEnabled: button.isEnabled,
+            onPressed: button.onPressed,
+            glassEffectUnionId: button.glassEffectUnionId,
+            glassEffectId: button.glassEffectId,
+            glassEffectInteractive: button.glassEffectInteractive,
+            namespace: namespace,
+            config: button.config,
+            badgeCount: nil
+          )
+        }
+      }
+      .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
+    } else {
+      VStack(alignment: .center, spacing: viewModel.spacing) {
+        ForEach(Array(viewModel.buttons.enumerated()), id: \.offset) { index, button in
+          GlassButtonSwiftUI(
+            title: button.title,
+            iconName: button.iconName,
+            iconImage: button.iconImage,
+            iconSize: button.iconSize,
+            iconColor: button.iconColor,
+            tint: button.tint,
+            isRound: button.isRound,
+            style: button.style,
+            isEnabled: button.isEnabled,
+            onPressed: button.onPressed,
+            glassEffectUnionId: button.glassEffectUnionId,
+            glassEffectId: button.glassEffectId,
+            glassEffectInteractive: button.glassEffectInteractive,
+            namespace: namespace,
+            config: button.config,
+            badgeCount: nil
+          )
+        }
+      }
+      .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
+    }
+  }
+
+  @ViewBuilder
+  private func badgeOverlay() -> some View {
+    if viewModel.axis == .horizontal {
+      HStack(alignment: .center, spacing: viewModel.spacing) {
+        ForEach(Array(viewModel.buttons.enumerated()), id: \.offset) { index, button in
+          Color.clear
+            .overlay(alignment: .topTrailing) {
+              if let count = button.badgeCount, count > 0 {
+                BadgeView(count: count)
+              }
+            }
+        }
+      }
+      .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
+    } else {
+      VStack(alignment: .center, spacing: viewModel.spacing) {
+        ForEach(Array(viewModel.buttons.enumerated()), id: \.offset) { index, button in
+          Color.clear
+            .overlay(alignment: .topTrailing) {
+              if let count = button.badgeCount, count > 0 {
+                BadgeView(count: count)
+              }
+            }
+        }
+      }
+      .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
+    }
+  }
 }
 
-// Custom badge view to match iOS native badge style
+// UIKit badge view - renders ABOVE SwiftUI to avoid glass effect sampling
 @available(iOS 26.0, *)
-struct BadgeView: View {
-  let count: Int
+class UIKitBadgeView: UIView {
+  private let label = UILabel()
+  private var count: Int = 0
 
-  var body: some View {
-    Text(count > 99 ? "99+" : "\(count)")
-      .font(.system(size: 12, weight: .semibold))
-      .foregroundColor(.white)
-      .padding(.horizontal, count > 9 ? 5 : 0)
-      .frame(minWidth: 18, minHeight: 18)
-      .background(
-        Capsule()
-          .fill(Color.red)
-      )
-      .shadow(color: Color.black.opacity(0.2), radius: 2, x: 0, y: 1) // Native badge shadow
-      .offset(x: 6, y: -6) // Position badge slightly outside button
-      .zIndex(1000) // Ensure badge is always on top
+  init(count: Int) {
+    self.count = count
+    super.init(frame: .zero)
+    setup()
+  }
+
+  required init?(coder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
+
+  private func setup() {
+    // Configure badge appearance
+    backgroundColor = .systemRed
+    layer.cornerRadius = 9 // Half of minHeight (18)
+    clipsToBounds = true
+
+    // Add shadow
+    layer.shadowColor = UIColor.black.cgColor
+    layer.shadowOpacity = 0.2
+    layer.shadowOffset = CGSize(width: 0, height: 1)
+    layer.shadowRadius = 2
+    layer.masksToBounds = false
+
+    // Configure label
+    label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
+    label.textColor = .white
+    label.textAlignment = .center
+    label.translatesAutoresizingMaskIntoConstraints = false
+    addSubview(label)
+
+    // Label constraints
+    NSLayoutConstraint.activate([
+      label.leadingAnchor.constraint(equalTo: leadingAnchor, constant: count > 9 ? 5 : 0),
+      label.trailingAnchor.constraint(equalTo: trailingAnchor, constant: count > 9 ? -5 : 0),
+      label.centerYAnchor.constraint(equalTo: centerYAnchor)
+    ])
+
+    updateCount(count)
+  }
+
+  func updateCount(_ newCount: Int) {
+    count = newCount
+    label.text = count > 99 ? "99+" : "\(count)"
+    isHidden = count <= 0
+
+    // Update corner radius based on content width
+    layoutIfNeeded()
+    layer.cornerRadius = bounds.height / 2
+  }
+
+  override var intrinsicContentSize: CGSize {
+    let width = max(18, label.intrinsicContentSize.width + (count > 9 ? 10 : 0))
+    return CGSize(width: width, height: 18)
   }
 }
 
@@ -141,6 +215,9 @@ class GlassButtonGroupPlatformView: NSObject, FlutterPlatformView {
   private var buttonCallbacks: [Int: (() -> Void)] = [:]
   private let viewModel: GlassButtonGroupViewModel
   private let channel: FlutterMethodChannel
+  private var badgeViews: [UIKitBadgeView] = []
+  private var axis: Axis = .horizontal
+  private var spacing: CGFloat = 8.0
   
   init(frame: CGRect, viewId: Int64, args: Any?, messenger: FlutterBinaryMessenger) {
     // Initialize container with frame provided by Flutter
@@ -348,10 +425,19 @@ class GlassButtonGroupPlatformView: NSObject, FlutterPlatformView {
       hostingController.view.bottomAnchor.constraint(equalTo: container.bottomAnchor, constant: 0),
     ])
     
+    // Store axis and spacing for badge positioning
+    self.axis = axis
+    self.spacing = spacing
+
     // Observe frame changes to force layout updates
     container.addObserver(self, forKeyPath: "frame", options: [.new, .old], context: nil)
     container.addObserver(self, forKeyPath: "bounds", options: [.new, .old], context: nil)
-    
+
+    // Create and add UIKit badge views
+    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
+      self?.updateBadgePositions()
+    }
+
     // Set up method channel handler for updates
     channel.setMethodCallHandler { [weak self] call, result in
       guard let self = self else {
@@ -620,6 +706,51 @@ class GlassButtonGroupPlatformView: NSObject, FlutterPlatformView {
     return container
   }
   
+  private func updateBadgePositions() {
+    // Remove existing badge views
+    badgeViews.forEach { $0.removeFromSuperview() }
+    badgeViews.removeAll()
+
+    let buttons = viewModel.buttons
+    guard !buttons.isEmpty else { return }
+
+    // Calculate button positions based on axis and spacing
+    let containerBounds = container.bounds
+    let buttonCount = buttons.count
+
+    for (index, button) in buttons.enumerated() {
+      guard let badgeCount = button.badgeCount, badgeCount > 0 else { continue }
+
+      let badgeView = UIKitBadgeView(count: badgeCount)
+      badgeView.translatesAutoresizingMaskIntoConstraints = false
+      container.addSubview(badgeView)
+
+      // Position badge based on button index and axis
+      // This is approximate - we calculate where each button should be
+      var badgeX: CGFloat = 0
+      var badgeY: CGFloat = 0
+
+      if axis == .horizontal {
+        // Horizontal layout: divide width by button count
+        let buttonWidth = containerBounds.width / CGFloat(buttonCount)
+        badgeX = (buttonWidth * CGFloat(index)) + buttonWidth - 6 // Top-right of button area
+        badgeY = 0 - 6 // Top edge
+      } else {
+        // Vertical layout: divide height by button count
+        let buttonHeight = containerBounds.height / CGFloat(buttonCount)
+        badgeX = containerBounds.width - 6 // Right edge
+        badgeY = (buttonHeight * CGFloat(index)) - 6 // Top of button area
+      }
+
+      NSLayoutConstraint.activate([
+        badgeView.leadingAnchor.constraint(equalTo: container.leadingAnchor, constant: badgeX),
+        badgeView.topAnchor.constraint(equalTo: container.topAnchor, constant: badgeY)
+      ])
+
+      badgeViews.append(badgeView)
+    }
+  }
+
   override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
     if keyPath == "frame" || keyPath == "bounds" {
       if let container = object as? UIView, container === self.container {
@@ -631,7 +762,10 @@ class GlassButtonGroupPlatformView: NSObject, FlutterPlatformView {
           self.container.layoutIfNeeded()
           self.hostingController.view.setNeedsLayout()
           self.hostingController.view.layoutIfNeeded()
-          
+
+          // Update badge positions on layout change
+          self.updateBadgePositions()
+
           // Force another update cycle for proper rendering
           DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
@@ -645,8 +779,9 @@ class GlassButtonGroupPlatformView: NSObject, FlutterPlatformView {
       super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
     }
   }
-  
+
   deinit {
+    badgeViews.forEach { $0.removeFromSuperview() }
     container.removeObserver(self, forKeyPath: "frame")
     container.removeObserver(self, forKeyPath: "bounds")
   }
