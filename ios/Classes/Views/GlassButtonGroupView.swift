@@ -25,104 +25,60 @@ struct GlassButtonGroupSwiftUI: View {
   @Namespace private var namespace
 
   var body: some View {
-    GeometryReader { geometry in
-      ZStack {
-        // Glass effect container with buttons (no badges)
-        GlassEffectContainer(spacing: viewModel.spacingForGlass) {
-          buttonStack(showBadges: false)
+    // Badges are now rendered using UIKit views, not SwiftUI
+    GlassEffectContainer(spacing: viewModel.spacingForGlass) {
+      if viewModel.axis == .horizontal {
+        HStack(alignment: .center, spacing: viewModel.spacing) {
+          ForEach(Array(viewModel.buttons.enumerated()), id: \.offset) { index, button in
+            GlassButtonSwiftUI(
+              title: button.title,
+              iconName: button.iconName,
+              iconImage: button.iconImage,
+              iconSize: button.iconSize,
+              iconColor: button.iconColor,
+              tint: button.tint,
+              isRound: button.isRound,
+              style: button.style,
+              isEnabled: button.isEnabled,
+              onPressed: button.onPressed,
+              glassEffectUnionId: button.glassEffectUnionId,
+              glassEffectId: button.glassEffectId,
+              glassEffectInteractive: button.glassEffectInteractive,
+              namespace: namespace,
+              config: button.config,
+              badgeCount: nil // Badges rendered via UIKit
+            )
+          }
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
-
-        // Badge overlay layer (outside glass container)
-        badgeOverlay()
-          .frame(width: geometry.size.width, height: geometry.size.height)
-          .allowsHitTesting(false)
+      } else {
+        VStack(alignment: .center, spacing: viewModel.spacing) {
+          ForEach(Array(viewModel.buttons.enumerated()), id: \.offset) { index, button in
+            GlassButtonSwiftUI(
+              title: button.title,
+              iconName: button.iconName,
+              iconImage: button.iconImage,
+              iconSize: button.iconSize,
+              iconColor: button.iconColor,
+              tint: button.tint,
+              isRound: button.isRound,
+              style: button.style,
+              isEnabled: button.isEnabled,
+              onPressed: button.onPressed,
+              glassEffectUnionId: button.glassEffectUnionId,
+              glassEffectId: button.glassEffectId,
+              glassEffectInteractive: button.glassEffectInteractive,
+              namespace: namespace,
+              config: button.config,
+              badgeCount: nil // Badges rendered via UIKit
+            )
+          }
+        }
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
       }
     }
     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
     .ignoresSafeArea()
-  }
-
-  @ViewBuilder
-  private func buttonStack(showBadges: Bool) -> some View {
-    if viewModel.axis == .horizontal {
-      HStack(alignment: .center, spacing: viewModel.spacing) {
-        ForEach(Array(viewModel.buttons.enumerated()), id: \.offset) { index, button in
-          GlassButtonSwiftUI(
-            title: button.title,
-            iconName: button.iconName,
-            iconImage: button.iconImage,
-            iconSize: button.iconSize,
-            iconColor: button.iconColor,
-            tint: button.tint,
-            isRound: button.isRound,
-            style: button.style,
-            isEnabled: button.isEnabled,
-            onPressed: button.onPressed,
-            glassEffectUnionId: button.glassEffectUnionId,
-            glassEffectId: button.glassEffectId,
-            glassEffectInteractive: button.glassEffectInteractive,
-            namespace: namespace,
-            config: button.config,
-            badgeCount: nil
-          )
-        }
-      }
-      .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
-    } else {
-      VStack(alignment: .center, spacing: viewModel.spacing) {
-        ForEach(Array(viewModel.buttons.enumerated()), id: \.offset) { index, button in
-          GlassButtonSwiftUI(
-            title: button.title,
-            iconName: button.iconName,
-            iconImage: button.iconImage,
-            iconSize: button.iconSize,
-            iconColor: button.iconColor,
-            tint: button.tint,
-            isRound: button.isRound,
-            style: button.style,
-            isEnabled: button.isEnabled,
-            onPressed: button.onPressed,
-            glassEffectUnionId: button.glassEffectUnionId,
-            glassEffectId: button.glassEffectId,
-            glassEffectInteractive: button.glassEffectInteractive,
-            namespace: namespace,
-            config: button.config,
-            badgeCount: nil
-          )
-        }
-      }
-      .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
-    }
-  }
-
-  @ViewBuilder
-  private func badgeOverlay() -> some View {
-    if viewModel.axis == .horizontal {
-      HStack(alignment: .center, spacing: viewModel.spacing) {
-        ForEach(Array(viewModel.buttons.enumerated()), id: \.offset) { index, button in
-          Color.clear
-            .overlay(alignment: .topTrailing) {
-              if let count = button.badgeCount, count > 0 {
-                BadgeView(count: count)
-              }
-            }
-        }
-      }
-      .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
-    } else {
-      VStack(alignment: .center, spacing: viewModel.spacing) {
-        ForEach(Array(viewModel.buttons.enumerated()), id: \.offset) { index, button in
-          Color.clear
-            .overlay(alignment: .topTrailing) {
-              if let count = button.badgeCount, count > 0 {
-                BadgeView(count: count)
-              }
-            }
-        }
-      }
-      .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
-    }
   }
 }
 
