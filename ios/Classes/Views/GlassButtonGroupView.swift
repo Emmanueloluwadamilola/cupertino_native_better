@@ -50,9 +50,9 @@ struct GlassButtonGroupSwiftUI: View {
             .overlay(alignment: .topTrailing) {
               if let count = button.badgeCount, count > 0 {
                 BadgeView(count: count)
-                  .allowsHitTesting(false) // Let taps pass through to button
               }
             }
+            .allowsHitTesting(true) // Ensure button remains tappable
           }
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
@@ -80,9 +80,9 @@ struct GlassButtonGroupSwiftUI: View {
             .overlay(alignment: .topTrailing) {
               if let count = button.badgeCount, count > 0 {
                 BadgeView(count: count)
-                  .allowsHitTesting(false) // Let taps pass through to button
               }
             }
+            .allowsHitTesting(true) // Ensure button remains tappable
           }
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
