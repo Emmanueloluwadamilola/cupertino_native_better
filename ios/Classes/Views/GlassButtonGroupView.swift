@@ -47,7 +47,6 @@ struct GlassButtonGroupSwiftUI: View {
               config: button.config,
               badgeCount: nil // Don't show badge inside button
             )
-            .clipped(false) // Prevent clipping of badge
             .overlay(alignment: .topTrailing) {
               if let count = button.badgeCount, count > 0 {
                 BadgeView(count: count)
@@ -78,7 +77,6 @@ struct GlassButtonGroupSwiftUI: View {
               config: button.config,
               badgeCount: nil // Don't show badge inside button
             )
-            .clipped(false) // Prevent clipping of badge
             .overlay(alignment: .topTrailing) {
               if let count = button.badgeCount, count > 0 {
                 BadgeView(count: count)
