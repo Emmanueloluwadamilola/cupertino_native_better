@@ -175,15 +175,16 @@ class _CNGlassButtonGroupState extends State<CNGlassButtonGroup> {
 
         if (widget.axis == Axis.horizontal) {
           final buttonHeight = _getEffectiveMinHeight();
-          // Add 3px to height to accommodate badge overflow at top
-          // Native side offsets buttons by 3px to keep badge within bounds
+          // Add 3px to height for badge overflow at top (badge is 18px tall, positioned at y=0)
+          // Add 6px to width for badge overflow at right (badge extends 6px beyond last button)
+          // Native side offsets buttons by 3px vertically to keep badge within bounds
           final totalHeight = buttonHeight + 3.0;
           return LayoutBuilder(
             builder: (context, constraints) {
               if (constraints.hasBoundedWidth) {
                 return ClipRect(
                   child: SizedBox(
-                    width: constraints.maxWidth,
+                    width: constraints.maxWidth + 6.0, // Add 6px for badge overflow on right
                     height: totalHeight,
                     child: platformView,
                   ),
@@ -191,7 +192,8 @@ class _CNGlassButtonGroupState extends State<CNGlassButtonGroup> {
               } else {
                 final estimatedWidth =
                     widget._effectiveButtonCount * 44.0 +
-                    ((widget._effectiveButtonCount - 1) * widget.spacing);
+                    ((widget._effectiveButtonCount - 1) * widget.spacing) +
+                    6.0; // Add 6px for badge overflow on right
                 return ClipRect(
                   child: SizedBox(
                     width: estimatedWidth,
@@ -207,7 +209,7 @@ class _CNGlassButtonGroupState extends State<CNGlassButtonGroup> {
           final estimatedHeight =
               (widget._effectiveButtonCount * buttonHeight) +
               ((widget._effectiveButtonCount - 1) * widget.spacing) +
-              3.0; // Add 3px for badge overflow
+              3.0; // Add 3px for badge overflow at top
           return ClipRect(
             child: LimitedBox(
               maxHeight: estimatedHeight.clamp(44.0, 400.0),
