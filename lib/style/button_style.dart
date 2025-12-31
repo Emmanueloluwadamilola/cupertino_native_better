@@ -1,3 +1,11 @@
+/// Button style definitions for Cupertino native controls.
+///
+/// This library provides [CNButtonStyle] enum with all available button
+/// visual styles including Liquid Glass effects for iOS 26+.
+///
+/// {@category Styles}
+library;
+
 /// Visual styles for [CNButton] and related controls.
 enum CNButtonStyle {
   /// Minimal, text-only style.

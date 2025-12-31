@@ -1,4 +1,30 @@
-// Public exports and convenience API for the plugin.
+/// Native Cupertino widgets for Flutter with Liquid Glass support.
+///
+/// This library provides native iOS and macOS widgets including buttons,
+/// sliders, switches, tab bars, and more. Supports Liquid Glass effects
+/// on iOS 26+ and macOS 26+.
+///
+/// ## Getting Started
+///
+/// Import this library to access all Cupertino native widgets:
+///
+/// ```dart
+/// import 'package:cupertino_native_better/cupertino_native.dart';
+/// ```
+///
+/// ## Available Components
+///
+/// - [CNButton] - Native button with multiple styles including glass effects
+/// - [CNSlider] - Native slider control
+/// - [CNSwitch] - Native toggle switch
+/// - [CNSegmentedControl] - Native segmented control
+/// - [CNTabBar] - Native tab bar
+/// - [CNIcon] - SF Symbols icon renderer
+/// - [CNGlassButtonGroup] - Glass button group with Liquid Glass effects
+/// - [CNLiquidGlassContainer] - Container with Liquid Glass background
+///
+/// {@category Main}
+library;
 
 export 'cupertino_native_platform_interface.dart';
 export 'cupertino_native_method_channel.dart';

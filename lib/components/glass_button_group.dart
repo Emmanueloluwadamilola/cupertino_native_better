@@ -184,7 +184,9 @@ class _CNGlassButtonGroupState extends State<CNGlassButtonGroup> {
               if (constraints.hasBoundedWidth) {
                 return ClipRect(
                   child: SizedBox(
-                    width: constraints.maxWidth + 6.0, // Add 6px for badge overflow on right
+                    width:
+                        constraints.maxWidth +
+                        6.0, // Add 6px for badge overflow on right
                     height: totalHeight,
                     child: platformView,
                   ),

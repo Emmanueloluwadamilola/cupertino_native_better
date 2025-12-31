@@ -1,3 +1,25 @@
+## 1.3.2
+
+### New Features
+
+- **Added**: Badge support for `CNGlassButtonGroup` icon buttons (PR #11 by @anirudhrao-github)
+  - New `badgeCount` property on `CNButtonData.icon()` for displaying notification badges
+  - Badges display as red circles with white text, showing "99+" for counts over 99
+  - Uses UIKit overlay on iOS to prevent glass effect sampling artifacts
+  - Proper clipping during page transitions
+
+### Improvements
+
+- **Improved**: Added library-level documentation for better API discoverability
+  - Enhanced dartdoc comments for `button`, `button_data`, `button_style`, and `cupertino_native` libraries
+  - 91.4% API documentation coverage
+
+- **Fixed**: Dart formatting issues for pub.dev compliance
+  - Resolved formatting in `button.dart` and `glass_button_group.dart`
+  - Achieves 160/160 pana score
+
+---
+
 ## 1.3.1
 
 ### Bug Fixes

@@ -1,3 +1,11 @@
+/// Data models for button configuration in glass button groups.
+///
+/// This library provides [CNButtonData] and [CNButtonDataConfig] for
+/// configuring buttons in [CNGlassButtonGroup] without using widget instances.
+///
+/// {@category Styles}
+library;
+
 import 'package:flutter/widgets.dart';
 
 import 'button_style.dart';

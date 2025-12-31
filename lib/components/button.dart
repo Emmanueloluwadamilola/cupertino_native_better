@@ -1,3 +1,11 @@
+/// Native Cupertino button component with Liquid Glass support.
+///
+/// This library provides [CNButton], a Flutter widget that renders native
+/// iOS/macOS buttons with full support for Liquid Glass effects on iOS 26+.
+///
+/// {@category Components}
+library;
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
@@ -841,9 +849,7 @@ class _CNButtonState extends State<CNButton> {
 
     // Sync badge count
     if (_lastBadgeCount != widget.badgeCount) {
-      await ch.invokeMethod('setBadgeCount', {
-        'badgeCount': widget.badgeCount,
-      });
+      await ch.invokeMethod('setBadgeCount', {'badgeCount': widget.badgeCount});
       _lastBadgeCount = widget.badgeCount;
     }
   }
@@ -1047,10 +1053,7 @@ class _CNButtonState extends State<CNButton> {
     if (widget.badgeCount != null && widget.badgeCount! > 0) {
       return Stack(
         clipBehavior: Clip.none,
-        children: [
-          button,
-          _buildBadge(widget.badgeCount!),
-        ],
+        children: [button, _buildBadge(widget.badgeCount!)],
       );
     }
 
@@ -1230,10 +1233,7 @@ class _CNButtonState extends State<CNButton> {
     if (widget.badgeCount != null && widget.badgeCount! > 0) {
       return Stack(
         clipBehavior: Clip.none,
-        children: [
-          button,
-          _buildBadge(widget.badgeCount!),
-        ],
+        children: [button, _buildBadge(widget.badgeCount!)],
       );
     }
 
@@ -1280,10 +1280,7 @@ class _CNButtonState extends State<CNButton> {
           color: CupertinoColors.systemRed,
           borderRadius: BorderRadius.circular(10),
         ),
-        constraints: const BoxConstraints(
-          minWidth: 20,
-          minHeight: 20,
-        ),
+        constraints: const BoxConstraints(minWidth: 20, minHeight: 20),
         child: Center(
           child: Text(
             badgeText,
