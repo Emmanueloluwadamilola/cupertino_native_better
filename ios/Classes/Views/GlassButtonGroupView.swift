@@ -205,7 +205,7 @@ class GlassButtonGroupPlatformView: NSObject, FlutterPlatformView {
     self.container.backgroundColor = .clear
     
     // Ensure container doesn't clip content
-    self.container.clipsToBounds = false
+    self.container.clipsToBounds = true
     // Remove any default layout margins that could cause offset
     if #available(iOS 11.0, *) {
       self.container.insetsLayoutMarginsFromSafeArea = false
