@@ -206,8 +206,6 @@ class _CNTabBarState extends State<CNTabBar> {
   bool? _lastSplit;
   int? _lastRightCount;
   double? _lastSplitSpacing;
-  Future<List<List<Uint8List?>>>? _customIconsFuture;
-  Future<Widget>? _nativeTabBarFuture;
 
   // Search state
   bool _isSearchActive = false;
@@ -241,12 +239,6 @@ class _CNTabBarState extends State<CNTabBar> {
     // Handle search item changes
     if (_hasSearch && _searchFocusNode == null) {
       _searchFocusNode = FocusNode();
-    }
-    // Clear cached futures if items or search state changes
-    if (oldWidget.items.length != widget.items.length ||
-        _hasSearch != (oldWidget.searchItem != null)) {
-      _customIconsFuture = null;
-      _nativeTabBarFuture = null;
     }
     _syncPropsToNativeIfNeeded();
   }
@@ -302,9 +294,8 @@ class _CNTabBarState extends State<CNTabBar> {
     }
 
     // Render custom IconData to bytes
-    _customIconsFuture ??= _renderCustomIcons();
     return FutureBuilder<List<List<Uint8List?>>>(
-      future: _customIconsFuture,
+      future: _renderCustomIcons(),
       builder: (context, snapshot) {
         if (!snapshot.hasData) {
           // Show placeholder while rendering
@@ -315,14 +306,12 @@ class _CNTabBarState extends State<CNTabBar> {
         final customIconBytes = iconBytes[0];
         final activeCustomIconBytes = iconBytes[1];
 
-        _nativeTabBarFuture ??= _buildNativeTabBar(
-          context,
-          customIconBytes: customIconBytes,
-          activeCustomIconBytes: activeCustomIconBytes,
-        );
-
         return FutureBuilder<Widget>(
-          future: _nativeTabBarFuture,
+          future: _buildNativeTabBar(
+            context,
+            customIconBytes: customIconBytes,
+            activeCustomIconBytes: activeCustomIconBytes,
+          ),
           builder: (context, snapshot) {
             if (!snapshot.hasData) {
               return SizedBox(height: widget.height);

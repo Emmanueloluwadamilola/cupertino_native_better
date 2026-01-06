@@ -104,7 +104,6 @@ class CupertinoTabBarPlatformView: NSObject, FlutterPlatformView, UITabBarDelega
     super.init()
 
     container.backgroundColor = .clear
-    container.isUserInteractionEnabled = true
     container.clipsToBounds = true // Prevent shadow leakage
     container.layer.shadowOpacity = 0 // Explicitly disable layer shadow
     if #available(iOS 13.0, *) { container.overrideUserInterfaceStyle = isDark ? .dark : .light }
@@ -836,7 +835,6 @@ channel.setMethodCallHandler { [weak self] call, result in
   func view() -> UIView { container }
 
   func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-    print("CNTabBar [\(ObjectIdentifier(self))]: Native selection detected")
     // Single bar case
     if let single = self.tabBar, single === tabBar, let items = single.items, let idx = items.firstIndex(of: item) {
       channel.invokeMethod("valueChanged", arguments: ["index": idx])

@@ -56,7 +56,6 @@ class CupertinoTabBarSearchPlatformView: NSObject, FlutterPlatformView, UITabBar
         }
 
         container.backgroundColor = .clear
-        container.isUserInteractionEnabled = true
         container.clipsToBounds = true
         container.layer.shadowOpacity = 0
 
@@ -319,7 +318,6 @@ class CupertinoTabBarSearchPlatformView: NSObject, FlutterPlatformView, UITabBar
     // MARK: - UITabBarDelegate
 
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        print("CNTabBarSearch [\(ObjectIdentifier(self))]: Native selection detected")
         // Check if search item was tapped
         if item.tag == 9999 {
             // Don't restore previous selection - let search tab stay selected
