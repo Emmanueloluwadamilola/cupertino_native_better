@@ -116,7 +116,8 @@ extension View {
 struct NoHighlightButtonStyle: ButtonStyle {
   func makeBody(configuration: Configuration) -> some View {
     configuration.label
-      // No opacity or scale changes - let the glass effect handle visual feedback
+      .opacity(configuration.isPressed ? 0.7 : 1.0)
+      .animation(.easeInOut(duration: 0.1), value: configuration.isPressed)
   }
 }
 
