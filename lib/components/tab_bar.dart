@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/services.dart';
 
 import '../channel/params.dart';
@@ -564,6 +565,7 @@ class _CNTabBarState extends State<CNTabBar> {
             creationParams: creationParams,
             creationParamsCodec: const StandardMessageCodec(),
             onPlatformViewCreated: _onCreated,
+            gestureRecognizers: const <Factory<OneSequenceGestureRecognizer>>{},
           )
         : AppKitView(
             viewType: viewType,

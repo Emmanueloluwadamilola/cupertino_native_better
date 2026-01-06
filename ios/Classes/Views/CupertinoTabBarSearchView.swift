@@ -69,6 +69,7 @@ class CupertinoTabBarSearchPlatformView: NSObject, FlutterPlatformView, UITabBar
         let bar = UITabBar(frame: .zero)
         tabBar = bar
         bar.delegate = self
+        bar.isUserInteractionEnabled = true
         bar.translatesAutoresizingMaskIntoConstraints = false
 
         // iOS 26+ - use direct properties for liquid glass effect

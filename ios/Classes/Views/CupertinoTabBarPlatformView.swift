@@ -168,6 +168,8 @@ class CupertinoTabBarPlatformView: NSObject, FlutterPlatformView, UITabBarDelega
       tabBarLeft = left; tabBarRight = right
       left.translatesAutoresizingMaskIntoConstraints = false
       right.translatesAutoresizingMaskIntoConstraints = false
+      left.isUserInteractionEnabled = true
+      right.isUserInteractionEnabled = true
       left.clipsToBounds = true; right.clipsToBounds = true // Prevent shadow leakage
       left.layer.shadowOpacity = 0; right.layer.shadowOpacity = 0
       left.delegate = self; right.delegate = self
@@ -272,6 +274,7 @@ class CupertinoTabBarPlatformView: NSObject, FlutterPlatformView, UITabBarDelega
       let bar = UITabBar(frame: .zero)
       tabBar = bar
       bar.delegate = self
+      bar.isUserInteractionEnabled = true
       bar.translatesAutoresizingMaskIntoConstraints = false
       bar.clipsToBounds = true // Prevent shadow leakage from tab bar itself
       bar.layer.shadowOpacity = 0
